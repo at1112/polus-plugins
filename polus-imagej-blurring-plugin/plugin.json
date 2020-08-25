@@ -1,0 +1,40 @@
+{
+    "name": "ImageJ Blurring",
+    "version": "0.1.3",
+    "title": "ImageJ Blurring",
+    "description": "Implementation of ImageJ's Gaussian Blur functionality",
+    "author": "Anjali Taneja (Anjali.Taneja@axleinfo.com)",
+    "institution": "National Center for Advancing Translational Sciences, National Institutes of Health",
+    "repository": "https://github.com/labshare/polus-plugins",
+    "website": "https://ncats.nih.gov/preclinical/core/informatics",
+    "citation": "",
+    "containerId": "labshare/polus-imagej-blurring-plugin:0.1.3",
+    "inputs": [
+      
+      {
+        "name": "images",
+        "type": "collection",
+        "description": "Input image collection to be processed by this plugin",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "name": "outDir",
+        "type": "collection",
+        "description": "Output collection"
+      }
+    ],
+    "ui": [
+      {
+        "key": "inputs.filePattern",
+        "title": "Filename pattern",
+        "description": "Filename pattern used to separate data"
+      },
+      {
+        "key": "inputs.images",
+        "title": "Input collection",
+        "description": "Input image collection to be processed by this plugin"
+      }
+    ]
+  }
