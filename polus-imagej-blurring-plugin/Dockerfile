@@ -1,13 +1,12 @@
 
 FROM labshare/polus-bfio-util:1.3.6-slim-buster
 
-RUN apt-get -y install git
+FROM continuumio/miniconda3
+RUN conda create -n env python=3.6
+RUN echo "source activate env" > ~/.bashrc
+ENV PATH /opt/conda/envs/env/bin:$PATH
 
-#install conda, create conda env, then install
-#need to install:
-#bfio
-#bioformats
-#javabridge
+RUN apt-get -y install git
 
 
 COPY VERSION /
@@ -22,6 +21,10 @@ RUN mkdir -p ${EXEC_DIR} \
 COPY src ${EXEC_DIR}/
 WORKDIR ${EXEC_DIR}
 
+RUN pip3 install bfio
+RUN pip3 install bioformats
+#RUN pip install javabridge
+RUN pip3 install cython
 RUN pip3 install -r ${EXEC_DIR}/requirements.txt --no-cache-dir
 
 ENTRYPOINT ["python3", "main.py"]

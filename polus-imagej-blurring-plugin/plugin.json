@@ -1,6 +1,6 @@
 {
     "name": "ImageJ Blurring",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "title": "ImageJ Blurring",
     "description": "Implementation of ImageJ's Gaussian Blur functionality",
     "author": "Anjali Taneja (Anjali.Taneja@axleinfo.com)",
@@ -8,7 +8,7 @@
     "repository": "https://github.com/labshare/polus-plugins",
     "website": "https://ncats.nih.gov/preclinical/core/informatics",
     "citation": "",
-    "containerId": "labshare/polus-imagej-blurring-plugin:0.1.4",
+    "containerId": "labshare/polus-imagej-blurring-plugin:0.1.5",
     "inputs": [
       
       {
