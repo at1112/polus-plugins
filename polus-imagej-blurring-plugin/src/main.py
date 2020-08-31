@@ -3,7 +3,6 @@ import numpy as np
 import imagej
 from bfio.bfio import BioReader, BioWriter
 import matplotlib.pyplot as plt
-
 import bioformats
 import javabridge as jutil
 import argparse, logging, subprocess, time, multiprocessing, sys
@@ -39,8 +38,8 @@ if __name__=="__main__":
     logger.info('outDir = {}'.format(outDir))
 
     # Input and Output directories
-    images = str(Path('.').joinpath('inputs').absolute())
-    outDir = str(Path('.').joinpath('outputs').absolute())
+    #images = str(Path('.').joinpath('inputs').absolute())
+    #outDir = str(Path('.').joinpath('outputs').absolute())
 
 
     # Get all file names in images image collection
