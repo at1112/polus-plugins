@@ -1,20 +1,25 @@
 {
-    "name": "ImageJ Blurring",
-    "version": "0.1.8",
-    "title": "ImageJ Blurring",
-    "description": "Implementation of ImageJ's Gaussian Blur functionality",
+    "name": "Threshold Apply1",
+    "version": "0.1.1",
+    "title": "Threshold Apply1",
+    "description": "Automation of plugin creation for Threshold Apply functions",
     "author": "Anjali Taneja (Anjali.Taneja@axleinfo.com)",
     "institution": "National Center for Advancing Translational Sciences, National Institutes of Health",
     "repository": "https://github.com/labshare/polus-plugins",
     "website": "https://ncats.nih.gov/preclinical/core/informatics",
     "citation": "",
-    "containerId": "labshare/polus-imagej-blurring-plugin:0.1.6",
+    "containerId": "labshare/polus-threshold-apply1-plugin:0.1.1",
     "inputs": [
-      
       {
-        "name": "images",
+        "name": "inpDir",
         "type": "collection",
         "description": "Input image collection to be processed by this plugin",
+        "required": true
+      },
+      {
+        "name": "threshVal",
+        "type": "number",
+        "description": "Constant threshold value",
         "required": true
       }
     ],
@@ -27,9 +32,14 @@
     ],
     "ui": [
       {
-        "key": "inputs.images",
-        "title": "Input collection",
+        "key": "inputs.inpDir",
+        "title": "Iterable in1",
         "description": "Input image collection to be processed by this plugin"
+      },
+      {
+        "key": "inputs.threshVal",
+        "title": "RealType in2",
+        "description": "Constant threshold value"
       }
     ]
   }

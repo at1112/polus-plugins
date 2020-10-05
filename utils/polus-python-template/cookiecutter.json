@@ -1,22 +1,25 @@
 {
-    "author": "Data Scientist",
-    "email": "data.scientist@labshare.org",
-    "github_username": "datascientist",
-    "project_name": "WIPP Widget",
-    "project_short_description": "Everything you need to start a WIPP plugin.",
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "project_name": "Filter Gauss",
+    "project_short_description": "Automation of plugin creation for Threshold Apply functions",
     "version": "0.1.1",
     "use_bfio": "True",
+    "plugin_name": "Filter Gauss",
+    "plugin_group": "filter()",
+    "plugin_subgroup": "gauss()",
     "_inputs": {
         "inpDir": {
             "type": "collection",
-            "title": "Input collection",
+            "title": "RandomAccessibleInterval in",
             "description": "Input image collection to be processed by this plugin",
             "required": "True"
         },
-        "filePattern": {
-            "type": "string",
-            "title": "Filename pattern",
-            "description": "Filename pattern used to separate data",
+        "sigma": {
+            "type": "number",
+            "title": "double sigma",
+            "description": "Constant threshold value",
             "required": "True"
         }
     },
@@ -26,6 +29,5 @@
             "description": "Output collection"
         }
     },
-    
     "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
 }
