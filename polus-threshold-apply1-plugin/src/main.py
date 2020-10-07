@@ -1,4 +1,5 @@
 import sys
+import csv
 import numpy as np
 import imagej
 from bfio.bfio import BioReader, BioWriter
@@ -79,19 +80,30 @@ if __name__=="__main__":
         arg_number = float(threshVal)
         arg_realtype = ij.py.to_java(arg_number)
 
-        print(type(arg_realtype))
+        #print(type(arg_realtype))
 
-        changed = cast('net/imglib2/type/numeric/RealType', arg_realtype)
+        #changed = cast('net/imglib2/type/numeric/RealType', arg_realtype)
 
-        print(type(changed))
+        FloatType = autoclass('net.imglib2.type.numeric.integer.UnsignedShortType')
+        thresh_val = FloatType()
+        thresh_val.set(float(threshVal))
+        output = ij.op().threshold().apply(arg_in, thresh_val)
+
+        
+
+        converted = ij.op().convert().float32(output)
+
+        print(type(converted))
+
+        out = ij.py.new_numpy_image(converted)
 
 
-        ij.op().threshold().apply(arg_out, arg_in, changed)
-    
-            
-            
-        output = np.reshape(output,(br.num_y(),br.num_x(),br.num_z(),1,1))
-            
+
+      
+        
+        output = np.reshape(out,(br.num_y(),br.num_x(),br.num_z(),1,1))
+        
+        
             
         # Write the output
         bw = BioWriter(str(Path(outDir).joinpath(f)),image=output, metadata=br.read_metadata())
@@ -111,4 +123,4 @@ fig,ax = plt.subplots(1,2)
 ax[0].imshow(image)
 ax[1].imshow(Two_out)
 plt.show()
-plt.savefig('bioreaderThresh.png')
+plt.savefig('bioreaderThresh3.png')
