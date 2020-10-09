@@ -91,15 +91,13 @@ if __name__=="__main__":
 
         
 
-        converted = ij.op().convert().float32(output)
+        converted = ij.op().convert().uint8(output)
 
         print(type(converted))
 
         out = ij.py.new_numpy_image(converted)
 
 
-
-      
         
         output = np.reshape(out,(br.num_y(),br.num_x(),br.num_z(),1,1))
         
@@ -123,4 +121,4 @@ fig,ax = plt.subplots(1,2)
 ax[0].imshow(image)
 ax[1].imshow(Two_out)
 plt.show()
-plt.savefig('bioreaderThresh3.png')
+plt.savefig('new.png')
