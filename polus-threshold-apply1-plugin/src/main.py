@@ -1,4 +1,6 @@
 import sys
+#import cv2
+import traceback
 import csv
 import numpy as np
 import imagej
@@ -31,34 +33,34 @@ if __name__=="__main__":
     
     
     
+    
     # Parse the arguments
     args = parser.parse_args()
     inpDir = args.inpDir
     if (Path.is_dir(Path(args.inpDir).joinpath('images'))):
-        
+            
         # switch to images folder if present
         fpath = str(Path(args.inpDir).joinpath('images').absolute())
-        
+            
     logger.info('inpDir = {}'.format(inpDir))
     threshVal = args.threshVal
     logger.info('threshVal = {}'.format(threshVal))
     outDir = args.outDir
     logger.info('outDir = {}'.format(outDir))
-    
-
         
-    # Get all file names in images image collection
+
+            
+     # Get all file names in images image collection
     images_files = [f.name for f in Path(inpDir).iterdir() if f.is_file() and "".join(f.suffixes)=='.ome.tif']
 
-     # Start ImageJ
+    # Start ImageJ
     ij = imagej.init('sc.fiji:fiji')
 
     ##import things after imagej.init otherwise imagej doesn't work!!
     import imglyb
     from imglyb import util
     from jnius import JavaClass, MetaJavaClass, PythonJavaClass, java_method, autoclass, cast
-    #func_from = getattr(autoclass('some.java.Class'), 'from')
-    #func_from()
+
 
     # Loop through files in images image collection and process
     for f in images_files:
@@ -68,49 +70,50 @@ if __name__=="__main__":
         #print(a)        
         image = np.squeeze(a)
 
-         # Create a RandomAccessibleInterval view for the image inside of ImageJ
+        # Create a RandomAccessibleInterval view for the image inside of ImageJ
         image_rai = ij.py.to_java(image)
         print("Image type (should be RandomAccesibleInterval): {}".format(type(image_rai).__name__))
 
         # Create the output numpy array
         output = np.zeros(image.shape,dtype=image.dtype)
 
+        ##Transform image and output into IterableInterval
         arg_out = ij.op().transform().flatIterableView(ij.py.to_java(output))
         arg_in = ij.op().transform().flatIterableView(image_rai)
+
+        ##Access UnsignedShorterType class
         UnsignedShorterType = autoclass('net.imglib2.type.numeric.integer.UnsignedShortType')
         thresh_val = UnsignedShorterType()
         thresh_val.set(float(threshVal))
+
+        ##Call Threshold.Apply function
         output = ij.op().threshold().apply(arg_in, thresh_val)
 
-
+        ##see type and features of output
         print('type(output): {}'.format(type(output)))
-        #print('output.getClass(): {}'.format(output.getClass()))
         print('dir(output): {}'.format(dir(output)))
+
+        #create cursor object
         cursor = output.cursor()
         print(dir(cursor))
 
-        print(output.size())
-
-
+        #print(output.size())
 
         output_np = np.zeros(((256,256,1,1,1)),dtype=image.dtype)
-        # print(br.num_x())
+        
         for x in range(256):
-            # print(x)
+            
             for y in range(256):
-                a = np.uint8(cursor.next().toString()) 
-
-        print(a)
-'''
                 
-         
-        print(output_np)     
+                output_np[y,x,0,0,0] = np.uint8(cursor.next().toString())
 
-        #output = ij.py.new_numpy_image(output)
-        
-        #output = np.reshape(output,(br.num_y(),br.num_x(),br.num_z(),1,1))
-        
-        
+
+        #print(output_np)     
+        plt.imshow(output_np[:,:,0,0,0])
+        plt.savefig('test.png')
+
+        #output = np.reshape(output_np,(br.num_y(),br.num_x(),br.num_z(),1,1))
+
             
         # Write the output
         bw = BioWriter(str(Path(outDir).joinpath(f)),image=output_np, metadata=br.read_metadata())
@@ -118,7 +121,8 @@ if __name__=="__main__":
         bw.close_image()
         
         
-           
+    
+'''           
 # Read an OME tiled tiff
 br = BioReader('INP1/r001_z000_y009_x012_c000.ome.tif')
 image = np.squeeze(br.read_image(X=(0,256),Y=(0,256))) # squeeze to 2-dimensions
@@ -131,6 +135,6 @@ ax[0].imshow(image)
 ax[1].imshow(Two_out)
 plt.show()
 plt.savefig('converted1.png')
-
 '''
+
 

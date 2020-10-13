@@ -176,10 +176,10 @@ for index, path in enumerate(keys):
             current_level = current_level[part]
 
 #print(nested_dict['threshold']['apply']['ApplyConstantThreshold'])   
-print(nested_dict['threshold']['apply']['ApplyConstantThreshold']['Input'][1][1])
+print(nested_dict['filter']['gauss'])
 
 #ij.op().filter.gauss(ij.py.to_java(nested_dict['filter']['gauss']['GaussRAISingleSigma']['Output'][0][0]), nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][0][0], nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][1][0]))
-
+'''
 my_dictionary = {
     "author": "Anjali Taneja",
     "email": "Anjali.Taneja@axleinfo.com",
@@ -221,3 +221,4 @@ with open('cookiecutter.json', 'w+') as f:
     # this would place the entire output on one line
     # use json.dump(lista_items, f, indent=4) to "pretty-print" with four spaces per indent
     json.dump(my_dictionary, f, indent=4)
+'''
