@@ -67,6 +67,7 @@ if __name__=="__main__":
         # Load an image
         br = BioReader(Path(inpDir).joinpath(f))
         a = br.read_image(X=(0,256),Y=(0,256))
+        #a = br.read_image()
         #print(a)        
         image = np.squeeze(a)
 
@@ -97,17 +98,22 @@ if __name__=="__main__":
         cursor = output.cursor()
         print(dir(cursor))
 
-        #print(output.size())
+        print(output.size())
 
         output_np = np.zeros(((256,256,1,1,1)),dtype=image.dtype)
+        #output_np = np.zeros(((image.shape[0],image.shape[1],1,1,1)),dtype=image.dtype)
         
         for x in range(256):
+        #for x in range(image.shape[1]):
             
             for y in range(256):
+            #for y in range(image.shape[0]):
                 
                 output_np[y,x,0,0,0] = np.uint8(cursor.next().toString())
 
-
+        unique, counts = np.unique(output_np, return_counts=True)
+        print(dict(zip(unique, counts)))
+         
         #print(output_np)     
         plt.imshow(output_np[:,:,0,0,0])
         plt.savefig('test.png')
