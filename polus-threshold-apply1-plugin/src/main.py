@@ -66,7 +66,7 @@ if __name__=="__main__":
     for f in images_files:
         # Load an image
         br = BioReader(Path(inpDir).joinpath(f))
-        a = br.read_image(X=(0,256),Y=(0,256))
+        a = br.read_image(X=(0,512),Y=(0,512))
         #a = br.read_image()
         #print(a)        
         image = np.squeeze(a)
@@ -100,13 +100,13 @@ if __name__=="__main__":
 
         print(output.size())
 
-        output_np = np.zeros(((256,256,1,1,1)),dtype=image.dtype)
-        #output_np = np.zeros(((image.shape[0],image.shape[1],1,1,1)),dtype=image.dtype)
+        #output_np = np.zeros(((256,256,1,1,1)),dtype=image.dtype)
+        output_np = np.zeros(((image.shape[0],image.shape[1],1,1,1)),dtype=image.dtype)
         
-        for x in range(256):
+        for x in range(512):
         #for x in range(image.shape[1]):
             
-            for y in range(256):
+            for y in range(512):
             #for y in range(image.shape[0]):
                 
                 output_np[y,x,0,0,0] = np.uint8(cursor.next().toString())
