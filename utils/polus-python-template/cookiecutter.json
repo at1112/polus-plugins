@@ -3,13 +3,26 @@
     "email": "Anjali.Taneja@axleinfo.com",
     "github_username": "at1112",
     "project_name": "Filter Gauss",
-    "project_short_description": "Automation of plugin creation for Threshold Apply functions",
+    "project_short_description": "Automation of plugin creation for Filter Gauss functions",
     "version": "0.1.1",
     "use_bfio": "True",
     "plugin_name": "Filter Gauss",
     "plugin_group": "filter()",
     "plugin_subgroup": "gauss()",
     "_inputs": {
+        "method": {
+            "type": "enum",
+            "title": "filter gauss type",
+            "description": "select the type of filter",
+            "options": {
+                "values": [
+                    "DefaultGaussRA",
+                    "GaussRAISingleSigma",
+                    "DefaultGaussRAI"
+                ]
+            },
+            "required": "True"
+        },
         "inpDir": {
             "type": "collection",
             "title": "RandomAccessibleInterval in",
@@ -19,8 +32,14 @@
         "sigma": {
             "type": "number",
             "title": "double sigma",
-            "description": "Constant threshold value",
-            "required": "True"
+            "description": "Constant sigma value",
+            "required": "False"
+        },
+        "sigma_array": {
+            "type": "array",
+            "title": "RealType in2",
+            "description": "Array of sigma values",
+            "required": "False"
         }
     },
     "_outputs": {

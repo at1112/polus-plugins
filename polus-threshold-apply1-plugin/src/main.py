@@ -32,8 +32,6 @@ if __name__=="__main__":
                         help='Output collection', required=True)
     
     
-    
-    
     # Parse the arguments
     args = parser.parse_args()
     inpDir = args.inpDir
@@ -47,9 +45,7 @@ if __name__=="__main__":
     logger.info('threshVal = {}'.format(threshVal))
     outDir = args.outDir
     logger.info('outDir = {}'.format(outDir))
-        
-
-            
+       
      # Get all file names in images image collection
     images_files = [f.name for f in Path(inpDir).iterdir() if f.is_file() and "".join(f.suffixes)=='.ome.tif']
 
@@ -60,7 +56,6 @@ if __name__=="__main__":
     import imglyb
     from imglyb import util
     from jnius import JavaClass, MetaJavaClass, PythonJavaClass, java_method, autoclass, cast
-
 
     # Loop through files in images image collection and process
     for f in images_files:
@@ -119,15 +114,12 @@ if __name__=="__main__":
         plt.savefig('test.png')
 
         #output = np.reshape(output_np,(br.num_y(),br.num_x(),br.num_z(),1,1))
-
-            
+    
         # Write the output
         bw = BioWriter(str(Path(outDir).joinpath(f)),image=output_np, metadata=br.read_metadata())
         bw.write_image(output_np)
         bw.close_image()
-        
-        
-    
+          
 '''           
 # Read an OME tiled tiff
 br = BioReader('INP1/r001_z000_y009_x012_c000.ome.tif')

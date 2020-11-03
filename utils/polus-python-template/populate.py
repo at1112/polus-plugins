@@ -193,6 +193,18 @@ my_dictionary = {
     "plugin_subgroup": "gauss()",
     
     "_inputs": {
+        "method": {
+            "type": "enum",
+            "title": "filter gauss type",
+            "description": "select the type of filter",
+            "options": {
+                "values": [
+                    nested_dict['filter']['gauss'],
+                    "GaussRAISingleSigma",
+                    "DefaultGaussRAI"
+                ]
+            },
+            "required": "True"
         "inpDir": {
             "type": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][0][1],
             "title": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][0][0],
@@ -203,7 +215,13 @@ my_dictionary = {
             "type": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][1][1],
             "title": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][1][0],
             "description": "Constant threshold value",
-            "required": "True"
+            "required": "False"
+          },
+        "sigma_array": {
+            "type": "array",
+            "title": "RealType in2",
+            "description": "Array of sigma values",
+            "required": "False"
         }
     },
     "_outputs": {
