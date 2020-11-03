@@ -111,7 +111,7 @@ if __name__=="__main__":
         
         output = np.reshape(output,(br.num_y(),br.num_x(),br.num_z(),1,1))
 
-        # Write the output
+        # Write the outputs
         bw = BioWriter(str(Path(outDir).joinpath(f)),image=output, metadata=br.read_metadata())
         bw.write_image(output)
         bw.close_image()
