@@ -99,8 +99,9 @@ if __name__=="__main__":
         print(b)
         print(type(b))
         
-
+        ij.op().filter().gauss(ij.py.to_java(output),image_rai, a)
         
+        '''
         ##IF METHOD = DEFAULTGAUSSRA, SIGMA_ARRAY IS PROVIDED, WE RUN DEFAULTGAUSSRA
         if method is 'DefaultGaussRA' or 'DefaultGaussRAI':
             ij.op().filter().gauss(ij.py.to_java(output),image_rai, ij.py.to_java(a))
@@ -108,7 +109,7 @@ if __name__=="__main__":
         else:
             ij.op().filter().gauss(ij.py.to_java(output),image_rai, float(sigma))
 
-        
+        '''
         output = np.reshape(output,(br.num_y(),br.num_x(),br.num_z(),1,1))
 
         # Write the outputs

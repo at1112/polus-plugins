@@ -1,3 +1,10 @@
+'''
+
+This script creates a nested dictionary containing the components of an ImageJ function call. 
+I have manually mapped some ImageJ datatypes to WIPP types, and attempt to populate a cookiecutter.json
+from this formatted dictionary iteratively
+
+'''
 import re
 import json
 import sys
@@ -53,6 +60,9 @@ for index, path in enumerate(keys):
             
             path[-1] = [[k, 0] for k in path[-1]]
             length = len(path[-1])
+
+            ##Here, I map IJ types to WIPP types
+
             for i in range(length):
                 
                 ##MAP COLLECTIONS!!
@@ -120,6 +130,8 @@ for index, path in enumerate(keys):
                     
                     length = len(path[-1])
                     
+                    ##Here, I map IJ types to WIPP types
+
                     for i in range(length):
                         
                         #map numbers
@@ -176,16 +188,75 @@ for index, path in enumerate(keys):
             current_level = current_level[part]
 
 #print(nested_dict['threshold']['apply']['ApplyConstantThreshold'])   
-print(nested_dict['filter']['gauss'])
 
-#ij.op().filter.gauss(ij.py.to_java(nested_dict['filter']['gauss']['GaussRAISingleSigma']['Output'][0][0]), nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][0][0], nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][1][0]))
+##STORES ALL GROUP NAMES IN LIST:
+a = list(nested_dict.keys())
+print(type(a))
+print(a)
+
+
+##Can use this if we want each plugin to work for a group, but makes more sense to do it for subgroups (e.g. not "project_name:Threshold" but "project_name:Threshold-Apply")
+for item in a:
+    my_dictionary = {
+        "author": "Anjali Taneja",
+        "email": "Anjali.Taneja@axleinfo.com",
+        "github_username": "at1112",
+        "project_name": item 
+    }
+    print(my_dictionary)
+
+
+##This Recursive function prints all of the components in order! How to parse through this to fill a .json?
+def recursive_items(dictionary):
+    for key, value in dictionary.items():
+        submodules = []
+        if type(value) is dict:
+            print (key)
+            yield from recursive_items(value)
+        else:
+            yield (key, value)
+
+for key, value in recursive_items(nested_dict):
+    print(key, value)
+
+
+
 '''
+def iterdict(d):
+    submodules = []
+    for k,v in d.items():
+        if isinstance(v, dict) and v != 'Inputs':
+            submodules.append(k)
+            iterdict(v)
+        else:       
+            submodules.append(k)    
+            inputs = k['Inputs']
+            outputs = k['Outputs']
+    return submodules, inputs, outputs
+'''
+
+
+
+##This nests all the way into the dict until you get inputs/outputs:
+def iterdict(d):
+    for k,v in d.items():        
+        if isinstance(v, dict):
+            iterdict(v)
+        else:            
+            print (k,":",v)
+
+iterdict(nested_dict)
+
+
+##I can use this with indexing through a dict one function or one group at a time (but want to automate):
+##feel free to comment this out, this is what I use to create the .jsons one at a time-
+
 my_dictionary = {
     "author": "Anjali Taneja",
     "email": "Anjali.Taneja@axleinfo.com",
     "github_username": "at1112",
-    "project_name": "Threshold Apply1",
-    "project_short_description": "Automation of plugin creation for Threshold Apply functions",
+    "project_name": "Threshold Apply All",
+    "project_short_description": "Automation of plugin creation for ALL Threshold Apply functions",
     "version": "0.1.1",
     "use_bfio": "True",
     "plugin_name": "Filter Gauss",
@@ -205,6 +276,7 @@ my_dictionary = {
                 ]
             },
             "required": "True"
+        },
         "inpDir": {
             "type": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][0][1],
             "title": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][0][0],
@@ -239,4 +311,3 @@ with open('cookiecutter.json', 'w+') as f:
     # this would place the entire output on one line
     # use json.dump(lista_items, f, indent=4) to "pretty-print" with four spaces per indent
     json.dump(my_dictionary, f, indent=4)
-'''
