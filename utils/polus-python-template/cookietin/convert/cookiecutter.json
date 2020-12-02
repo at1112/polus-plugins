@@ -1,0 +1,107 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ convert",
+    "project_short_description": "ConvertImages$Bit,ConvertImages$Cfloat32,ConvertImages$Cfloat64,ConvertImages$Float32,ConvertImages$Float64,ConvertImages$Int16,ConvertImages$Int32,ConvertImages$Int64,ConvertImages$Int8,ConvertImages$Uint12,ConvertImages$Uint128,ConvertImages$Uint16,ConvertImages$Uint2,ConvertImages$Uint32,ConvertImages$Uint4,ConvertImages$Uint64,ConvertImages$Uint8",
+    "plugin_namespace": {
+        "ConvertImages$Bit": "out = ij.op().convert().bit(in)",
+        "ConvertImages$Cfloat32": "out = ij.op().convert().cfloat32(in)",
+        "ConvertImages$Cfloat64": "out = ij.op().convert().cfloat64(in)",
+        "ConvertImages$Float32": "out = ij.op().convert().float32(in)",
+        "ConvertImages$Float64": "out = ij.op().convert().float64(in)",
+        "ConvertImages$Int16": "out = ij.op().convert().int16(in)",
+        "ConvertImages$Int32": "out = ij.op().convert().int32(in)",
+        "ConvertImages$Int64": "out = ij.op().convert().int64(in)",
+        "ConvertImages$Int8": "out = ij.op().convert().int8(in)",
+        "ConvertImages$Uint12": "out = ij.op().convert().uint12(in)",
+        "ConvertImages$Uint128": "out = ij.op().convert().uint128(in)",
+        "ConvertImages$Uint16": "out = ij.op().convert().uint16(in)",
+        "ConvertImages$Uint2": "out = ij.op().convert().uint2(in)",
+        "ConvertImages$Uint32": "out = ij.op().convert().uint32(in)",
+        "ConvertImages$Uint4": "out = ij.op().convert().uint4(in)",
+        "ConvertImages$Uint64": "out = ij.op().convert().uint64(in)",
+        "ConvertImages$Uint8": "out = ij.op().convert().uint8(in)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "ConvertImages$Bit",
+                "ConvertImages$Cfloat32",
+                "ConvertImages$Cfloat64",
+                "ConvertImages$Float32",
+                "ConvertImages$Float64",
+                "ConvertImages$Int16",
+                "ConvertImages$Int32",
+                "ConvertImages$Int64",
+                "ConvertImages$Int8",
+                "ConvertImages$Uint12",
+                "ConvertImages$Uint128",
+                "ConvertImages$Uint16",
+                "ConvertImages$Uint2",
+                "ConvertImages$Uint32",
+                "ConvertImages$Uint4",
+                "ConvertImages$Uint64",
+                "ConvertImages$Uint8"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "ConvertImages$Bit": "IterableInterval",
+                "ConvertImages$Cfloat32": "IterableInterval",
+                "ConvertImages$Cfloat64": "IterableInterval",
+                "ConvertImages$Float32": "IterableInterval",
+                "ConvertImages$Float64": "IterableInterval",
+                "ConvertImages$Int16": "IterableInterval",
+                "ConvertImages$Int32": "IterableInterval",
+                "ConvertImages$Int64": "IterableInterval",
+                "ConvertImages$Int8": "IterableInterval",
+                "ConvertImages$Uint12": "IterableInterval",
+                "ConvertImages$Uint128": "IterableInterval",
+                "ConvertImages$Uint16": "IterableInterval",
+                "ConvertImages$Uint2": "IterableInterval",
+                "ConvertImages$Uint32": "IterableInterval",
+                "ConvertImages$Uint4": "IterableInterval",
+                "ConvertImages$Uint64": "IterableInterval",
+                "ConvertImages$Uint8": "IterableInterval"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "ConvertImages$Bit": "Img",
+                "ConvertImages$Cfloat32": "Img",
+                "ConvertImages$Cfloat64": "Img",
+                "ConvertImages$Float32": "Img",
+                "ConvertImages$Float64": "Img",
+                "ConvertImages$Int16": "Img",
+                "ConvertImages$Int32": "Img",
+                "ConvertImages$Int64": "Img",
+                "ConvertImages$Int8": "Img",
+                "ConvertImages$Uint12": "Img",
+                "ConvertImages$Uint128": "Img",
+                "ConvertImages$Uint16": "Img",
+                "ConvertImages$Uint2": "Img",
+                "ConvertImages$Uint32": "Img",
+                "ConvertImages$Uint4": "Img",
+                "ConvertImages$Uint64": "Img",
+                "ConvertImages$Uint8": "Img"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

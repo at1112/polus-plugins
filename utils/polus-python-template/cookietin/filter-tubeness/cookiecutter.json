@@ -1,0 +1,61 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ filter tubeness",
+    "project_short_description": "DefaultTubeness",
+    "plugin_namespace": {
+        "DefaultTubeness": "out = ij.op().filter().tubeness(in,sigma,calibration)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "DefaultTubeness"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "DefaultTubeness": "RandomAccessibleInterval"
+            }
+        },
+        "sigma": {
+            "type": "number",
+            "title": "sigma",
+            "description": "sigma",
+            "required": true,
+            "call_types": {
+                "DefaultTubeness": "double"
+            }
+        },
+        "calibration": {
+            "type": "array",
+            "title": "calibration",
+            "description": "calibration",
+            "required": true,
+            "call_types": {
+                "DefaultTubeness": "double[]"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "DefaultTubeness": "IterableInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

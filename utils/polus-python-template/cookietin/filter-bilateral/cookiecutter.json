@@ -1,0 +1,70 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ filter bilateral",
+    "project_short_description": "DefaultBilateral",
+    "plugin_namespace": {
+        "DefaultBilateral": "out = ij.op().filter().bilateral(in,sigmaR,sigmaS,radius)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "DefaultBilateral"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "DefaultBilateral": "RandomAccessibleInterval"
+            }
+        },
+        "sigmaR": {
+            "type": "number",
+            "title": "sigmaR",
+            "description": "sigmaR",
+            "required": true,
+            "call_types": {
+                "DefaultBilateral": "double"
+            }
+        },
+        "sigmaS": {
+            "type": "number",
+            "title": "sigmaS",
+            "description": "sigmaS",
+            "required": true,
+            "call_types": {
+                "DefaultBilateral": "double"
+            }
+        },
+        "radius": {
+            "type": "number",
+            "title": "radius",
+            "description": "radius",
+            "required": true,
+            "call_types": {
+                "DefaultBilateral": "int"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "DefaultBilateral": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

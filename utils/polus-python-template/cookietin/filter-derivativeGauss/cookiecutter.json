@@ -1,0 +1,61 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ filter derivativeGauss",
+    "project_short_description": "DefaultDerivativeGauss",
+    "plugin_namespace": {
+        "DefaultDerivativeGauss": "out = ij.op().filter().derivativeGauss(in1,in2,sigma)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "DefaultDerivativeGauss"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in1": {
+            "type": "collection",
+            "title": "in1",
+            "description": "in1",
+            "required": true,
+            "call_types": {
+                "DefaultDerivativeGauss": "RandomAccessibleInterval"
+            }
+        },
+        "in2": {
+            "type": "array",
+            "title": "in2",
+            "description": "in2",
+            "required": true,
+            "call_types": {
+                "DefaultDerivativeGauss": "int[]"
+            }
+        },
+        "sigma": {
+            "type": "array",
+            "title": "sigma",
+            "description": "sigma",
+            "required": true,
+            "call_types": {
+                "DefaultDerivativeGauss": "double[]"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "DefaultDerivativeGauss": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

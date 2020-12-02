@@ -1,0 +1,57 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ transform crop",
+    "project_short_description": "CropImgPlus,CropRAI",
+    "plugin_namespace": {
+        "CropImgPlus": "out = ij.op().transform().crop(in1,in2)",
+        "CropRAI": "out = ij.op().transform().crop(in1,in2)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "CropImgPlus",
+                "CropRAI"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in1": {
+            "type": "collection",
+            "title": "in1",
+            "description": "in1",
+            "required": true,
+            "call_types": {
+                "CropImgPlus": "ImgPlus",
+                "CropRAI": "RandomAccessibleInterval"
+            }
+        },
+        "in2": {
+            "type": "collection",
+            "title": "in2",
+            "description": "in2",
+            "required": true,
+            "call_types": {
+                "CropImgPlus": "Interval",
+                "CropRAI": "Interval"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "CropImgPlus": "ImgPlus",
+                "CropRAI": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

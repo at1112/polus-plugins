@@ -1,0 +1,43 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ create imgPlus",
+    "project_short_description": "DefaultCreateImgPlus",
+    "plugin_namespace": {
+        "DefaultCreateImgPlus": "out = ij.op().create().imgPlus(in)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "DefaultCreateImgPlus"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "DefaultCreateImgPlus": "Img"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "DefaultCreateImgPlus": "ImgPlus"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

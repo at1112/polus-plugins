@@ -1,0 +1,83 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ filter dog",
+    "project_short_description": "DoGSingleSigmas,DoGVaryingSigmas",
+    "plugin_namespace": {
+        "DoGSingleSigmas": "out = ij.op().filter().dog(in,sigma1,sigma2)",
+        "DoGVaryingSigmas": "out = ij.op().filter().dog(in,sigmas1,sigmas2)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "DoGSingleSigmas",
+                "DoGVaryingSigmas"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "DoGSingleSigmas": "RandomAccessibleInterval",
+                "DoGVaryingSigmas": "RandomAccessibleInterval"
+            }
+        },
+        "sigma1": {
+            "type": "number",
+            "title": "sigma1",
+            "description": "sigma1",
+            "required": true,
+            "call_types": {
+                "DoGSingleSigmas": "double"
+            }
+        },
+        "sigma2": {
+            "type": "number",
+            "title": "sigma2",
+            "description": "sigma2",
+            "required": true,
+            "call_types": {
+                "DoGSingleSigmas": "double"
+            }
+        },
+        "sigmas1": {
+            "type": "array",
+            "title": "sigmas1",
+            "description": "sigmas1",
+            "required": true,
+            "call_types": {
+                "DoGVaryingSigmas": "double[]"
+            }
+        },
+        "sigmas2": {
+            "type": "array",
+            "title": "sigmas2",
+            "description": "sigmas2",
+            "required": true,
+            "call_types": {
+                "DoGVaryingSigmas": "double[]"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "DoGSingleSigmas": "RandomAccessibleInterval",
+                "DoGVaryingSigmas": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

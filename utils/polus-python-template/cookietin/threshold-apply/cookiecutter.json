@@ -1,0 +1,73 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ threshold apply",
+    "project_short_description": "ApplyConstantThreshold,ApplyManualThreshold",
+    "plugin_namespace": {
+        "ApplyConstantThreshold": "out = ij.op().threshold().apply(in1,in2)",
+        "ApplyManualThreshold": "out = ij.op().threshold().apply(in,threshold)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "ApplyConstantThreshold",
+                "ApplyManualThreshold"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in1": {
+            "type": "collection",
+            "title": "in1",
+            "description": "in1",
+            "required": true,
+            "call_types": {
+                "ApplyConstantThreshold": "Iterable"
+            }
+        },
+        "in2": {
+            "type": "number",
+            "title": "in2",
+            "description": "in2",
+            "required": true,
+            "call_types": {
+                "ApplyConstantThreshold": "RealType"
+            }
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "ApplyManualThreshold": "IterableInterval"
+            }
+        },
+        "threshold": {
+            "type": "number",
+            "title": "threshold",
+            "description": "threshold",
+            "required": true,
+            "call_types": {
+                "ApplyManualThreshold": "RealType"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "ApplyConstantThreshold": "Iterable",
+                "ApplyManualThreshold": "IterableInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

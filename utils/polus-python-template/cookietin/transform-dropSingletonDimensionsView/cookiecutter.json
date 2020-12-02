@@ -1,0 +1,43 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ transform dropSingletonDimensionsView",
+    "project_short_description": "DefaultDropSingletonDimensionsView",
+    "plugin_namespace": {
+        "DefaultDropSingletonDimensionsView": "out = ij.op().transform().dropSingletonDimensionsView(in)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "DefaultDropSingletonDimensionsView"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "DefaultDropSingletonDimensionsView": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "DefaultDropSingletonDimensionsView": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

@@ -1,0 +1,74 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ image distancetransform",
+    "project_short_description": "DistanceTransform2D,DistanceTransform2DCalibration,DistanceTransform3D,DistanceTransform3DCalibration,DefaultDistanceTransform,DefaultDistanceTransformCalibration",
+    "plugin_namespace": {
+        "DistanceTransform2D": "out = ij.op().image().distancetransform(in)",
+        "DistanceTransform2DCalibration": "out = ij.op().image().distancetransform(in,calibration)",
+        "DistanceTransform3D": "out = ij.op().image().distancetransform(in)",
+        "DistanceTransform3DCalibration": "out = ij.op().image().distancetransform(in,calibration)",
+        "DefaultDistanceTransform": "out = ij.op().image().distancetransform(in)",
+        "DefaultDistanceTransformCalibration": "out = ij.op().image().distancetransform(in,calibration)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "DistanceTransform2D",
+                "DistanceTransform2DCalibration",
+                "DistanceTransform3D",
+                "DistanceTransform3DCalibration",
+                "DefaultDistanceTransform",
+                "DefaultDistanceTransformCalibration"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "DistanceTransform2D": "RandomAccessibleInterval",
+                "DistanceTransform2DCalibration": "RandomAccessibleInterval",
+                "DistanceTransform3D": "RandomAccessibleInterval",
+                "DistanceTransform3DCalibration": "RandomAccessibleInterval",
+                "DefaultDistanceTransform": "RandomAccessibleInterval",
+                "DefaultDistanceTransformCalibration": "RandomAccessibleInterval"
+            }
+        },
+        "calibration": {
+            "type": "array",
+            "title": "calibration",
+            "description": "calibration",
+            "required": true,
+            "call_types": {
+                "DistanceTransform2DCalibration": "double[]",
+                "DistanceTransform3DCalibration": "double[]",
+                "DefaultDistanceTransformCalibration": "double[]"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "DistanceTransform2D": "RandomAccessibleInterval",
+                "DistanceTransform2DCalibration": "RandomAccessibleInterval",
+                "DistanceTransform3D": "RandomAccessibleInterval",
+                "DistanceTransform3DCalibration": "RandomAccessibleInterval",
+                "DefaultDistanceTransform": "RandomAccessibleInterval",
+                "DefaultDistanceTransformCalibration": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

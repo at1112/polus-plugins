@@ -1,0 +1,143 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ math",
+    "project_short_description": "IIToIIOutputII$Add,IIToIIOutputII$Divide,IIToIIOutputII$Multiply,IIToIIOutputII$Subtract,ConstantToIIOutputII$Add,ConstantToIIOutputII$Divide,ConstantToIIOutputII$Multiply,ConstantToIIOutputII$Subtract,IIToRAIOutputII$Add,IIToRAIOutputII$Divide,IIToRAIOutputII$Multiply,IIToRAIOutputII$Subtract,ConstantToIIOutputRAI$Add,ConstantToIIOutputRAI$Divide,ConstantToIIOutputRAI$Multiply,ConstantToIIOutputRAI$Subtract",
+    "plugin_namespace": {
+        "IIToIIOutputII$Add": "out = ij.op().math().add(in1,in2)",
+        "IIToIIOutputII$Divide": "out = ij.op().math().divide(in1,in2)",
+        "IIToIIOutputII$Multiply": "out = ij.op().math().multiply(in1,in2)",
+        "IIToIIOutputII$Subtract": "out = ij.op().math().subtract(in1,in2)",
+        "ConstantToIIOutputII$Add": "out = ij.op().math().add(in,value)",
+        "ConstantToIIOutputII$Divide": "out = ij.op().math().divide(in,value)",
+        "ConstantToIIOutputII$Multiply": "out = ij.op().math().multiply(in,value)",
+        "ConstantToIIOutputII$Subtract": "out = ij.op().math().subtract(in,value)",
+        "IIToRAIOutputII$Add": "out = ij.op().math().add(in1,in2)",
+        "IIToRAIOutputII$Divide": "out = ij.op().math().divide(in1,in2)",
+        "IIToRAIOutputII$Multiply": "out = ij.op().math().multiply(in1,in2)",
+        "IIToRAIOutputII$Subtract": "out = ij.op().math().subtract(in1,in2)",
+        "ConstantToIIOutputRAI$Add": "out = ij.op().math().add(in,value)",
+        "ConstantToIIOutputRAI$Divide": "out = ij.op().math().divide(in,value)",
+        "ConstantToIIOutputRAI$Multiply": "out = ij.op().math().multiply(in,value)",
+        "ConstantToIIOutputRAI$Subtract": "out = ij.op().math().subtract(in,value)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "IIToIIOutputII$Add",
+                "IIToIIOutputII$Divide",
+                "IIToIIOutputII$Multiply",
+                "IIToIIOutputII$Subtract",
+                "ConstantToIIOutputII$Add",
+                "ConstantToIIOutputII$Divide",
+                "ConstantToIIOutputII$Multiply",
+                "ConstantToIIOutputII$Subtract",
+                "IIToRAIOutputII$Add",
+                "IIToRAIOutputII$Divide",
+                "IIToRAIOutputII$Multiply",
+                "IIToRAIOutputII$Subtract",
+                "ConstantToIIOutputRAI$Add",
+                "ConstantToIIOutputRAI$Divide",
+                "ConstantToIIOutputRAI$Multiply",
+                "ConstantToIIOutputRAI$Subtract"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in1": {
+            "type": "collection",
+            "title": "in1",
+            "description": "in1",
+            "required": true,
+            "call_types": {
+                "IIToIIOutputII$Add": "IterableInterval",
+                "IIToIIOutputII$Divide": "IterableInterval",
+                "IIToIIOutputII$Multiply": "IterableInterval",
+                "IIToIIOutputII$Subtract": "IterableInterval",
+                "IIToRAIOutputII$Add": "IterableInterval",
+                "IIToRAIOutputII$Divide": "IterableInterval",
+                "IIToRAIOutputII$Multiply": "IterableInterval",
+                "IIToRAIOutputII$Subtract": "IterableInterval"
+            }
+        },
+        "in2": {
+            "type": "collection",
+            "title": "in2",
+            "description": "in2",
+            "required": true,
+            "call_types": {
+                "IIToIIOutputII$Add": "IterableInterval",
+                "IIToIIOutputII$Divide": "IterableInterval",
+                "IIToIIOutputII$Multiply": "IterableInterval",
+                "IIToIIOutputII$Subtract": "IterableInterval",
+                "IIToRAIOutputII$Add": "RandomAccessibleInterval",
+                "IIToRAIOutputII$Divide": "RandomAccessibleInterval",
+                "IIToRAIOutputII$Multiply": "RandomAccessibleInterval",
+                "IIToRAIOutputII$Subtract": "RandomAccessibleInterval"
+            }
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "ConstantToIIOutputII$Add": "IterableInterval",
+                "ConstantToIIOutputII$Divide": "IterableInterval",
+                "ConstantToIIOutputII$Multiply": "IterableInterval",
+                "ConstantToIIOutputII$Subtract": "IterableInterval",
+                "ConstantToIIOutputRAI$Add": "IterableInterval",
+                "ConstantToIIOutputRAI$Divide": "IterableInterval",
+                "ConstantToIIOutputRAI$Multiply": "IterableInterval",
+                "ConstantToIIOutputRAI$Subtract": "IterableInterval"
+            }
+        },
+        "value": {
+            "type": "number",
+            "title": "value",
+            "description": "value",
+            "required": true,
+            "call_types": {
+                "ConstantToIIOutputII$Add": "NumericType",
+                "ConstantToIIOutputII$Divide": "NumericType",
+                "ConstantToIIOutputII$Multiply": "NumericType",
+                "ConstantToIIOutputII$Subtract": "NumericType",
+                "ConstantToIIOutputRAI$Add": "NumericType",
+                "ConstantToIIOutputRAI$Divide": "NumericType",
+                "ConstantToIIOutputRAI$Multiply": "NumericType",
+                "ConstantToIIOutputRAI$Subtract": "NumericType"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "IIToIIOutputII$Add": "IterableInterval",
+                "IIToIIOutputII$Divide": "IterableInterval",
+                "IIToIIOutputII$Multiply": "IterableInterval",
+                "IIToIIOutputII$Subtract": "IterableInterval",
+                "ConstantToIIOutputII$Add": "IterableInterval",
+                "ConstantToIIOutputII$Divide": "IterableInterval",
+                "ConstantToIIOutputII$Multiply": "IterableInterval",
+                "ConstantToIIOutputII$Subtract": "IterableInterval",
+                "IIToRAIOutputII$Add": "IterableInterval",
+                "IIToRAIOutputII$Divide": "IterableInterval",
+                "IIToRAIOutputII$Multiply": "IterableInterval",
+                "IIToRAIOutputII$Subtract": "IterableInterval",
+                "ConstantToIIOutputRAI$Add": "RandomAccessibleInterval",
+                "ConstantToIIOutputRAI$Divide": "RandomAccessibleInterval",
+                "ConstantToIIOutputRAI$Multiply": "RandomAccessibleInterval",
+                "ConstantToIIOutputRAI$Subtract": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

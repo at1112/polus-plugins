@@ -1,0 +1,55 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ morphology thin",
+    "project_short_description": "ThinGuoHall,ThinHilditch,ThinMorphological,ThinZhangSuen",
+    "plugin_namespace": {
+        "ThinGuoHall": "out = ij.op().morphology().thinGuoHall(in)",
+        "ThinHilditch": "out = ij.op().morphology().thinHilditch(in)",
+        "ThinMorphological": "out = ij.op().morphology().thinMorphological(in)",
+        "ThinZhangSuen": "out = ij.op().morphology().thinZhangSuen(in)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "ThinGuoHall",
+                "ThinHilditch",
+                "ThinMorphological",
+                "ThinZhangSuen"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "ThinGuoHall": "RandomAccessibleInterval",
+                "ThinHilditch": "RandomAccessibleInterval",
+                "ThinMorphological": "RandomAccessibleInterval",
+                "ThinZhangSuen": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "ThinGuoHall": "RandomAccessibleInterval",
+                "ThinHilditch": "RandomAccessibleInterval",
+                "ThinMorphological": "RandomAccessibleInterval",
+                "ThinZhangSuen": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

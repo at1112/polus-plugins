@@ -1,0 +1,65 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ filter gauss",
+    "project_short_description": "GaussRAISingleSigma,DefaultGaussRAI",
+    "plugin_namespace": {
+        "GaussRAISingleSigma": "out = ij.op().filter().gauss(in,sigma)",
+        "DefaultGaussRAI": "out = ij.op().filter().gauss(in,sigmas)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "GaussRAISingleSigma",
+                "DefaultGaussRAI"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "GaussRAISingleSigma": "RandomAccessibleInterval",
+                "DefaultGaussRAI": "RandomAccessibleInterval"
+            }
+        },
+        "sigma": {
+            "type": "number",
+            "title": "sigma",
+            "description": "sigma",
+            "required": true,
+            "call_types": {
+                "GaussRAISingleSigma": "double"
+            }
+        },
+        "sigmas": {
+            "type": "array",
+            "title": "sigmas",
+            "description": "sigmas",
+            "required": true,
+            "call_types": {
+                "DefaultGaussRAI": "double[]"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "GaussRAISingleSigma": "RandomAccessibleInterval",
+                "DefaultGaussRAI": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

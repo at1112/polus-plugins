@@ -1,0 +1,47 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ image normalize",
+    "project_short_description": "NormalizeIIComputer,NormalizeIIFunction",
+    "plugin_namespace": {
+        "NormalizeIIComputer": "out = ij.op().image().normalize(in)",
+        "NormalizeIIFunction": "out = ij.op().image().normalize(in)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "NormalizeIIComputer",
+                "NormalizeIIFunction"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "NormalizeIIComputer": "IterableInterval",
+                "NormalizeIIFunction": "IterableInterval"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "NormalizeIIComputer": "IterableInterval",
+                "NormalizeIIFunction": "IterableInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

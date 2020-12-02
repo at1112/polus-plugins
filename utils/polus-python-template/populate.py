@@ -1,46 +1,157 @@
 '''
 
-This script creates a nested dictionary containing the components of an ImageJ function call. 
-I have manually mapped some ImageJ datatypes to WIPP types, and attempt to populate a cookiecutter.json
-from this formatted dictionary iteratively
+This script creates a nested dictionary containing the components of an ImageJ
+function call. I have manually mapped some ImageJ datatypes to WIPP types, and
+attempt to populate a cookiecutter.json from this formatted dictionary
+iteratively.
 
 '''
-import re
-import json
-import sys
-import numpy as np
-import imagej
-from bfio.bfio import BioReader, BioWriter
-import matplotlib.pyplot as plt
-import bioformats
-import javabridge as jutil
-import argparse, logging, subprocess, time, multiprocessing, sys
+import re, json, pprint, logging, copy
 from pathlib import Path
+import imagej
 
+""" Parse ImageJ Op Metadata """
+# Start PyImageJ
+#ij = imagej.init('sc.fiji:fiji')
+ij = imagej.init("sc.fiji:fiji:2.1.1+net.imagej:imagej-legacy:0.37.4")
 
-f = open("output.txt")
-text = f.read()
-f.close()
+import jnius
+
+# Get a list of plugins related to ops
+plugin_list = list(ij.op().ops().iterator())
+print(plugin_list)
+
+# List of plugins to skip
+skip_classes = [
+    'copy',
+    'create.img'
+]
+
+# Get op subclass metadata
+text = ij.op().help()
+#print(text)
+
+""" Type Conversions """
+# Values that map to collection
+COLLECTION_TYPES = [
+    'Iterable',
+    'Interval',
+    'IterableInterval',
+    # 'IterableRegion',
+    'RandomAccessibleInterval',
+    'ImgPlus',
+    'PlanarImg',
+    # 'ImgFactory',
+    # 'ImgLabeling',
+    'ArrayImg',
+    'Img'
+]
+
+# Values that map to number
+NUMBER_TYPES = [
+    'RealType',
+    'NumericType',
+    'byte', 'ByteType', 'UnsignedByteType',
+    'short','ShortType','UnsignedShortType',
+    'int','Integer','IntegerType',
+    'long', 'Long', 'LongType', 'UnsignedLongType',
+    'float','FloatType',
+    'double','Double','DoubleType'
+]
+
+# Values that map to boolean
+BOOLEAN_TYPES = [
+    'boolean','Boolean','BooleanType'
+]
+
+# Values that map to array
+ARRAY_TYPES = [
+    # 'double[][]',
+    'List',
+    'double[]',
+    'long[]',
+    'ArrayList',
+    # 'Object[]',
+    'int[]'
+]
+
+# Values that map to string
+STRING_TYPES = [
+    'RealLocalizable',
+    'String'
+]
+
+IMAGEJ_WIPP_TYPE = {t:'collection' for t in COLLECTION_TYPES}
+IMAGEJ_WIPP_TYPE.update({t:'number' for t in NUMBER_TYPES})
+IMAGEJ_WIPP_TYPE.update({t:'boolean' for t in BOOLEAN_TYPES})
+IMAGEJ_WIPP_TYPE.update({t:'array' for t in ARRAY_TYPES})
+IMAGEJ_WIPP_TYPE.update({t:'string' for t in STRING_TYPES})
+
+""" Dictionaries to Generate Cookicutter JSON """
+# Input variable dictionary
+input_dict = {
+    "type": None,
+    "title": None,
+    "description": None,
+    "required": True,
+    "call_types": {}
+}
+
+# Output variable dictionary
+output_dict = {
+    "type": "collection",
+    "title": None,
+    "description": None,
+    "call_types": {}
+}
+
+# Separator between input/output variables
+separator = ',\n'
+
+# The core of the plugin json
+plugin_template = {
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    
+    "project_name": {},
+    "project_short_description": {},
+    
+    "plugin_namespace": {},
+    
+    "_inputs": {},
+    "_outputs": {},
+    
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}
+    
+""" Parse the ImageJ ops help text """
+# Remove white space characters
 text = text.replace('\n','')
 text = text.replace('\t','')
 text = text.replace('=','= ')
-split_text = re.compile("([(][a-zA-Z0-9\][a-zA-Z]+[ ]+[a-z?]+[)]+[ ]+[=])+[ ]").split(text) #gets everything but the (RealType out? String errMsg)
-list2 = []
-nested_dict = {}
-count= 0
+
+# Loop variables
 nested_dict = {}
 keys=[]
 Inputs = []
 Outputs = []
+count = 0
+
+# Parse inputs/outputs
+split_text = re.compile("([(][a-zA-Z0-9\][a-zA-Z]+[ ]+[a-z?]+[)]+[ ]+[=])+[ ]").split(text) #gets everything but the (RealType out? String errMsg)
+
+# Loop through ImageJ Ops
 for index,element in enumerate(split_text):
-    count += 1
     z = re.match("(?:^|\W)net.imagej.ops.([a-z]+).([a-z0-9A-Z$]+).([a-z0-9A-Z$]+).([a-z0-9A-Z$]+).([a-zA-Z0-9]+)\(([\sa-zA-Z0-9,\[\]\?]*)\)", element)
     if z:
         match_string = z.group(0)
         keys.append(match_string.split('(')[0].split('.')[3:])
         
         output = split_text[index-1]
-        outputs = output[1:].split(' ')[0]
+        outputs = output[1:-3]
         inputs = match_string.split('(')[1][:-1]
         inputs = inputs.split(',')
         Inputs.append(inputs)
@@ -48,266 +159,156 @@ for index,element in enumerate(split_text):
             if outputs in item:
                 inputs.pop(i)
         Outputs.append([outputs])
-        #print(inputs)
-        #print(outputs)
-        #print(match_string)
+
+"""
+Create a Java class dictionary with defined input/output type conversions
+
+This code does two things:
+1. Maps input/output data types between wipp and imagej
+2. Skip any classes that do not have a wipp collection as either input or output
+
+If a class doesn't have a collection as an input or output type, the
+functionality will likely be limited from within WIPP. This may need to be
+changed in the future. For example, if a plugin calculates the mean of an image
+or calculates the mean of a region of interest, it will likely have image as an
+input and a numeric or array type output that could be dumped into a csv.
+
+Also, optional inputs are ignored at the moment. It may be desirable to find a
+way to include them in the future.
+"""
+java_classes = {}
+skipped = []
 for index, path in enumerate(keys):
-    for i in range(2):
-        if i == 0:
-            path.append('Input')
-            path.append(Inputs[index])
-            
-            
-            path[-1] = [[k, 0] for k in path[-1]]
-            length = len(path[-1])
-
-            ##Here, I map IJ types to WIPP types
-
-            for i in range(length):
-                
-                ##MAP COLLECTIONS!!
-                if 'Interval' in path[-1][i][0] or 'Iterable' in path[-1][i][0]:
-                    path[-1][i][1] = 'collection'
-                    
-                ##MAP NUMBERS!!
-                if 'Integer' in path[-1][i][0] or 'RealType' in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'int' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'double' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'Double' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'NumericType' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'long' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'Long' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'float' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'Float' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'short' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'Short' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                    path[-1][i][1] = 'number'
-                if 'byte' in path[-1][i][0] or 'Byte' in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                
-                ##MAP STRINGS!!
-                if 'ComplexType' in path[-1][i][0]:
-                    path[-1][i][1] = 'string'
-                    
-                ##MAP BOOLEANS!!
-                if 'Boolean' in path[-1][i][0] or 'boolean' in path[-1][i][0]:
-                    path[-1][i][1] = 'boolean'
-                
-                ####MAP ARRAYS!!
-                if '[]' in path[-1][i][0] or 'List' in path[-1][i][0]:
-                    path[-1][i][1] = 'array'
-                    
-            
-        else:
-            path[-2] = 'Output'
-            path[-1] = Outputs[index]
-            
-            path[-1] = [[k, 0] for k in path[-1]]
-            
-        
-            
-        current_level = nested_dict
-        
-        
-        for part in path:
-            if part not in current_level:
-                if part == 'Input':
-                    current_level[part] = path[-1]
-                    break
-                elif part == 'Output':
-                    current_level[part] = path[-1]
-                    
-                    
-                    length = len(path[-1])
-                    
-                    ##Here, I map IJ types to WIPP types
-
-                    for i in range(length):
-                        
-                        #map numbers
-
-                        if 'Integer' in path[-1][i][0] or 'RealType' in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'int' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'double' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'Double' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'NumericType' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'long' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'Long' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'Float' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'float' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'short' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'Short' in path[-1][i][0] and '[]' not in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                        if 'byte' in path[-1][i][0] or 'Byte' in path[-1][i][0]:
-                            path[-1][i][1] = 'number'
-                            
-                        ##MAP COLLECTIONS!!
-                        if 'Interval' in path[-1][i][0] or 'Iterable' in path[-1][i][0]:
-                            path[-1][i][1] = 'collection'
-                        if 'Img' in path[-1][i][0]:
-                            path[-1][i][1] = 'collection'
-                            
-                        ##MAP BOOLEANS!!
-                        if 'Boolean' in path[-1][i][0] or 'boolean' in path[-1][i][0]:
-                            path[-1][i][1] = 'boolean'
-                            
-                        ##MAP STRINGS!!
-                        if 'Localizable' in path[-1][i][0]:
-                            path[-1][i][1] = 'string'
-                        if 'String' in path[-1][i][0]:
-                            path[-1][i][1] = 'string'
-                            
-                        ####MAP ARRAYS!!
-                        if '[]' in path[-1][i][0] or 'List' in path[-1][i][0]:
-                            path[-1][i][1] = 'array'
-                            
-                    #print(path[-1])
-                    break
-                else:
-                    current_level[part] = {}
-            current_level = current_level[part]
-
-#print(nested_dict['threshold']['apply']['ApplyConstantThreshold'])   
-
-##STORES ALL GROUP NAMES IN LIST:
-a = list(nested_dict.keys())
-print(type(a))
-print(a)
-
-
-##Can use this if we want each plugin to work for a group, but makes more sense to do it for subgroups (e.g. not "project_name:Threshold" but "project_name:Threshold-Apply")
-for item in a:
-    my_dictionary = {
-        "author": "Anjali Taneja",
-        "email": "Anjali.Taneja@axleinfo.com",
-        "github_username": "at1112",
-        "project_name": item 
-    }
-    print(my_dictionary)
-
-
-##This Recursive function prints all of the components in order! How to parse through this to fill a .json?
-def recursive_items(dictionary):
-    for key, value in dictionary.items():
-        submodules = []
-        if type(value) is dict:
-            print (key)
-            yield from recursive_items(value)
-        else:
-            yield (key, value)
-
-for key, value in recursive_items(nested_dict):
-    print(key, value)
-
-
-
-'''
-def iterdict(d):
-    submodules = []
-    for k,v in d.items():
-        if isinstance(v, dict) and v != 'Inputs':
-            submodules.append(k)
-            iterdict(v)
-        else:       
-            submodules.append(k)    
-            inputs = k['Inputs']
-            outputs = k['Outputs']
-    return submodules, inputs, outputs
-'''
-
-
-
-##This nests all the way into the dict until you get inputs/outputs:
-def iterdict(d):
-    for k,v in d.items():        
-        if isinstance(v, dict):
-            iterdict(v)
-        else:            
-            print (k,":",v)
-
-iterdict(nested_dict)
-
-
-##I can use this with indexing through a dict one function or one group at a time (but want to automate):
-##feel free to comment this out, this is what I use to create the .jsons one at a time-
-
-my_dictionary = {
-    "author": "Anjali Taneja",
-    "email": "Anjali.Taneja@axleinfo.com",
-    "github_username": "at1112",
-    "project_name": "Threshold Apply All",
-    "project_short_description": "Automation of plugin creation for ALL Threshold Apply functions",
-    "version": "0.1.1",
-    "use_bfio": "True",
-    "plugin_name": "Filter Gauss",
-    "plugin_group": "filter()",
-    "plugin_subgroup": "gauss()",
+    class_name = path[-1]
+    plugin_name = '.'.join(path[:-1])
     
-    "_inputs": {
-        "method": {
+    if plugin_name in skip_classes:
+        continue
+    
+    outputs = {o.split(' ')[1].rstrip('?'):
+                {'wipp_type': IMAGEJ_WIPP_TYPE.get(o.split(' ')[0]),
+                 'imagej_type': o.split(' ')[0]} for o in Outputs[index]}
+    
+    if 'collection' not in [o['wipp_type'] for o in outputs.values()] or \
+        None in [o['wipp_type'] for o in outputs.values()]:
+        skipped.append(o) for o in outputs.values()
+        continue
+    
+    inputs = {i.split(' ')[1]:
+                {'wipp_type': IMAGEJ_WIPP_TYPE.get(i.split(' ')[0]),
+                 'imagej_type': i.split(' ')[0]} for i in Inputs[index] if not i.endswith('?')}
+    
+    if 'collection' not in [i['wipp_type'] for i in inputs.values()] or \
+        None in [i['wipp_type'] for i in inputs.values()]:
+        continue
+    
+    if plugin_name in java_classes.keys():
+        java_classes[plugin_name].update({
+            class_name: {
+                '_inputs': inputs,
+                '_outputs': outputs
+            }
+        })
+    else:
+        java_classes[plugin_name] = {
+            class_name: {
+                '_inputs': inputs,
+                '_outputs': outputs
+            }
+        }
+
+
+print(skipped)
+""" Build the cookiecutter dictionaries for each plugin
+
+This section of code uses all the above information to build a dictionary that
+can be exported as a cookiecutter json file. The Java classes found above are
+grouped by the plugin
+"""
+plugins = {}
+count = 0
+for plugin_name,plugin_info in java_classes.items():
+    
+    # Initialize the plugin json from the template
+    plugin_dict = copy.deepcopy(plugin_template)
+    plugin_dict['project_name'] = 'ImageJ ' + plugin_name.replace('.', ' ')
+    plugin_dict['project_short_description'] = ','.join(list(plugin_info.keys()))
+    
+    # Determine the root namespace
+    root_namespace = 'ij.op('
+    for name in plugin_name.split('.'):
+        namespace = root_namespace + ')'
+        if name not in dir(eval(namespace)):
+            break
+        root_namespace = namespace + '.' + name + '('
+        
+    # Determine the code to execute the op
+    plugin_namespace = {}
+    for op_name,op_info in plugin_info.items():
+        
+        try:
+            namespace = root_namespace + ')'
+            op_method = op_name.split('$')[-1][0].lower() + op_name.split('$')[-1][1:]
+            if op_method in dir(eval(namespace)):
+                plugin_namespace[op_name] = namespace + '.' + op_method + '('
+            else:
+                continue
+        except:
+            plugin_namespace[op_name] = root_namespace
+        
+        # Set the output
+        plugin_namespace[op_name] = list(op_info['_outputs'].keys())[0] + ' = ' + plugin_namespace[op_name]
+        
+        # Set the inputs
+        plugin_namespace[op_name] += ','.join(list(op_info['_inputs'].keys())) + ')'
+        
+    plugin_dict['plugin_namespace'] = plugin_namespace
+    
+    # Create an enum to select an op for the plugin
+    inp = {
+        "opName": {
+            "title": "Operation",
             "type": "enum",
-            "title": "filter gauss type",
-            "description": "select the type of filter",
-            "options": {
-                "values": [
-                    nested_dict['filter']['gauss'],
-                    "GaussRAISingleSigma",
-                    "DefaultGaussRAI"
-                ]
-            },
-            "required": "True"
-        },
-        "inpDir": {
-            "type": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][0][1],
-            "title": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][0][0],
-            "description": "Input image collection to be processed by this plugin",
-            "required": "True"
-        },
-        "sigma": {
-            "type": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][1][1],
-            "title": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Input'][1][0],
-            "description": "Constant threshold value",
-            "required": "False"
-          },
-        "sigma_array": {
-            "type": "array",
-            "title": "RealType in2",
-            "description": "Array of sigma values",
-            "required": "False"
+            "options": list(plugin_namespace.keys()),
+            "description": "Operation to perform",
+            "required": True
         }
-    },
-    "_outputs": {
-        "outDir": {
-            "type": nested_dict['filter']['gauss']['GaussRAISingleSigma']['Output'][0][1],
-            "description": "Output collection"
-        }
-    },
+    }
     
-    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
-}
+    # Define the inputs
+    for key in plugin_namespace.keys():
+        
+        io = plugin_info[key]
+        
+        for input_name,type_dict in io['_inputs'].items():
+            if input_name not in inp.keys():
+                inp[input_name] = copy.deepcopy(input_dict)
+                inp[input_name]['type'] = type_dict['wipp_type']
+                inp[input_name]['title'] = input_name
+                inp[input_name]['description'] = input_name
+            
+            inp[input_name]['call_types'][key] = type_dict['imagej_type']
+    plugin_dict['_inputs'] = inp
+    
+    # Define the inputs
+    out = {}
+    for key in plugin_namespace.keys():
+        
+        io = plugin_info[key]
+        
+        for output_name,type_dict in io['_outputs'].items():
+            if output_name not in out.keys():
+                out[output_name] = copy.deepcopy(output_dict)
+                out[output_name]['type'] = type_dict['wipp_type']
+                out[output_name]['title'] = output_name
+                out[output_name]['description'] = output_name
+            
+            out[output_name]['call_types'][key] = type_dict['imagej_type']
+    plugin_dict['_outputs'] = out
+    
+    file_path = Path(__file__).with_name('cookietin').joinpath(plugin_name.replace('.','-'))
+    file_path.mkdir(exist_ok=True,parents=True)
+    
+    with open(file_path.joinpath('cookiecutter.json'),'w') as fw:
+        json.dump(plugin_dict,fw,indent=4)
 
-
-with open('cookiecutter.json', 'w+') as f:
-    # this would place the entire output on one line
-    # use json.dump(lista_items, f, indent=4) to "pretty-print" with four spaces per indent
-    json.dump(my_dictionary, f, indent=4)

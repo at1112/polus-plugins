@@ -1,0 +1,107 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ threshold",
+    "project_short_description": "ApplyThresholdMethod$Huang,ApplyThresholdMethod$IJ1,ApplyThresholdMethod$Intermodes,ApplyThresholdMethod$IsoData,ApplyThresholdMethod$Li,ApplyThresholdMethod$MaxEntropy,ApplyThresholdMethod$MaxLikelihood,ApplyThresholdMethod$Mean,ApplyThresholdMethod$MinError,ApplyThresholdMethod$Minimum,ApplyThresholdMethod$Moments,ApplyThresholdMethod$Otsu,ApplyThresholdMethod$Percentile,ApplyThresholdMethod$RenyiEntropy,ApplyThresholdMethod$Rosin,ApplyThresholdMethod$Shanbhag,ApplyThresholdMethod$Triangle,ApplyThresholdMethod$Yen",
+    "plugin_namespace": {
+        "ApplyThresholdMethod$Huang": "out = ij.op().threshold().huang(in)",
+        "ApplyThresholdMethod$Intermodes": "out = ij.op().threshold().intermodes(in)",
+        "ApplyThresholdMethod$IsoData": "out = ij.op().threshold().isoData(in)",
+        "ApplyThresholdMethod$Li": "out = ij.op().threshold().li(in)",
+        "ApplyThresholdMethod$MaxEntropy": "out = ij.op().threshold().maxEntropy(in)",
+        "ApplyThresholdMethod$MaxLikelihood": "out = ij.op().threshold().maxLikelihood(in)",
+        "ApplyThresholdMethod$Mean": "out = ij.op().threshold().mean(in)",
+        "ApplyThresholdMethod$MinError": "out = ij.op().threshold().minError(in)",
+        "ApplyThresholdMethod$Minimum": "out = ij.op().threshold().minimum(in)",
+        "ApplyThresholdMethod$Moments": "out = ij.op().threshold().moments(in)",
+        "ApplyThresholdMethod$Otsu": "out = ij.op().threshold().otsu(in)",
+        "ApplyThresholdMethod$Percentile": "out = ij.op().threshold().percentile(in)",
+        "ApplyThresholdMethod$RenyiEntropy": "out = ij.op().threshold().renyiEntropy(in)",
+        "ApplyThresholdMethod$Rosin": "out = ij.op().threshold().rosin(in)",
+        "ApplyThresholdMethod$Shanbhag": "out = ij.op().threshold().shanbhag(in)",
+        "ApplyThresholdMethod$Triangle": "out = ij.op().threshold().triangle(in)",
+        "ApplyThresholdMethod$Yen": "out = ij.op().threshold().yen(in)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "ApplyThresholdMethod$Huang",
+                "ApplyThresholdMethod$Intermodes",
+                "ApplyThresholdMethod$IsoData",
+                "ApplyThresholdMethod$Li",
+                "ApplyThresholdMethod$MaxEntropy",
+                "ApplyThresholdMethod$MaxLikelihood",
+                "ApplyThresholdMethod$Mean",
+                "ApplyThresholdMethod$MinError",
+                "ApplyThresholdMethod$Minimum",
+                "ApplyThresholdMethod$Moments",
+                "ApplyThresholdMethod$Otsu",
+                "ApplyThresholdMethod$Percentile",
+                "ApplyThresholdMethod$RenyiEntropy",
+                "ApplyThresholdMethod$Rosin",
+                "ApplyThresholdMethod$Shanbhag",
+                "ApplyThresholdMethod$Triangle",
+                "ApplyThresholdMethod$Yen"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in": {
+            "type": "collection",
+            "title": "in",
+            "description": "in",
+            "required": true,
+            "call_types": {
+                "ApplyThresholdMethod$Huang": "IterableInterval",
+                "ApplyThresholdMethod$Intermodes": "IterableInterval",
+                "ApplyThresholdMethod$IsoData": "IterableInterval",
+                "ApplyThresholdMethod$Li": "IterableInterval",
+                "ApplyThresholdMethod$MaxEntropy": "IterableInterval",
+                "ApplyThresholdMethod$MaxLikelihood": "IterableInterval",
+                "ApplyThresholdMethod$Mean": "IterableInterval",
+                "ApplyThresholdMethod$MinError": "IterableInterval",
+                "ApplyThresholdMethod$Minimum": "IterableInterval",
+                "ApplyThresholdMethod$Moments": "IterableInterval",
+                "ApplyThresholdMethod$Otsu": "IterableInterval",
+                "ApplyThresholdMethod$Percentile": "IterableInterval",
+                "ApplyThresholdMethod$RenyiEntropy": "IterableInterval",
+                "ApplyThresholdMethod$Rosin": "IterableInterval",
+                "ApplyThresholdMethod$Shanbhag": "IterableInterval",
+                "ApplyThresholdMethod$Triangle": "IterableInterval",
+                "ApplyThresholdMethod$Yen": "IterableInterval"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "ApplyThresholdMethod$Huang": "IterableInterval",
+                "ApplyThresholdMethod$Intermodes": "IterableInterval",
+                "ApplyThresholdMethod$IsoData": "IterableInterval",
+                "ApplyThresholdMethod$Li": "IterableInterval",
+                "ApplyThresholdMethod$MaxEntropy": "IterableInterval",
+                "ApplyThresholdMethod$MaxLikelihood": "IterableInterval",
+                "ApplyThresholdMethod$Mean": "IterableInterval",
+                "ApplyThresholdMethod$MinError": "IterableInterval",
+                "ApplyThresholdMethod$Minimum": "IterableInterval",
+                "ApplyThresholdMethod$Moments": "IterableInterval",
+                "ApplyThresholdMethod$Otsu": "IterableInterval",
+                "ApplyThresholdMethod$Percentile": "IterableInterval",
+                "ApplyThresholdMethod$RenyiEntropy": "IterableInterval",
+                "ApplyThresholdMethod$Rosin": "IterableInterval",
+                "ApplyThresholdMethod$Shanbhag": "IterableInterval",
+                "ApplyThresholdMethod$Triangle": "IterableInterval",
+                "ApplyThresholdMethod$Yen": "IterableInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}

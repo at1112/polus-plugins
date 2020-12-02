@@ -1,108 +1,23 @@
 {
-    "author": "Anjali Taneja",
-    "email": "Anjali.Taneja@axleinfo.com",
-    "github_username": "at1112",
-    "project_name": "Threshold Apply All",
-    "project_short_description": "Automation of plugin creation for ALL Threshold Apply functions",
+    "author": "Data Scientist",
+    "email": "data.scientist@labshare.org",
+    "github_username": "datascientist",
+    "project_name": "WIPP Widget",
+    "project_short_description": "Everything you need to start a WIPP plugin.",
     "version": "0.1.1",
     "use_bfio": "True",
-    "plugin_name": "Filter Gauss",
-    "plugin_group": "filter()",
-    "plugin_subgroup": "gauss()",
     "_inputs": {
-        "method": {
-            "type": "enum",
-            "title": "filter gauss type",
-            "description": "select the type of filter",
-            "options": {
-                "values": [
-                    {
-                        "DefaultGaussRA": {
-                            "Input": [
-                                [
-                                    "RandomAccessible in",
-                                    0
-                                ],
-                                [
-                                    "double[] sigmas",
-                                    "array"
-                                ]
-                            ],
-                            "Output": [
-                                [
-                                    "RandomAccessibleInterval",
-                                    "collection"
-                                ]
-                            ]
-                        },
-                        "GaussRAISingleSigma": {
-                            "Input": [
-                                [
-                                    "RandomAccessibleInterval in",
-                                    "collection"
-                                ],
-                                [
-                                    "double sigma",
-                                    "number"
-                                ],
-                                [
-                                    "OutOfBoundsFactory outOfBounds?",
-                                    0
-                                ]
-                            ],
-                            "Output": [
-                                [
-                                    "RandomAccessibleInterval",
-                                    "collection"
-                                ]
-                            ]
-                        },
-                        "DefaultGaussRAI": {
-                            "Input": [
-                                [
-                                    "RandomAccessibleInterval in",
-                                    "collection"
-                                ],
-                                [
-                                    "double[] sigmas",
-                                    "array"
-                                ],
-                                [
-                                    "OutOfBoundsFactory outOfBounds?",
-                                    0
-                                ]
-                            ],
-                            "Output": [
-                                [
-                                    "RandomAccessibleInterval",
-                                    "collection"
-                                ]
-                            ]
-                        }
-                    },
-                    "GaussRAISingleSigma",
-                    "DefaultGaussRAI"
-                ]
-            },
-            "required": "True"
-        },
         "inpDir": {
             "type": "collection",
-            "title": "RandomAccessibleInterval in",
+            "title": "Input collection",
             "description": "Input image collection to be processed by this plugin",
             "required": "True"
         },
-        "sigma": {
-            "type": "number",
-            "title": "double sigma",
-            "description": "Constant threshold value",
-            "required": "False"
-        },
-        "sigma_array": {
-            "type": "array",
-            "title": "RealType in2",
-            "description": "Array of sigma values",
-            "required": "False"
+        "filePattern": {
+            "type": "string",
+            "title": "Filename pattern",
+            "description": "Filename pattern used to separate data",
+            "required": "True"
         }
     },
     "_outputs": {
@@ -111,5 +26,6 @@
             "description": "Output collection"
         }
     },
+    
     "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
 }

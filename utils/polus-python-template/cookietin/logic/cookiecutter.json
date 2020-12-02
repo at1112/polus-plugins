@@ -1,0 +1,77 @@
+{
+    "author": "Anjali Taneja",
+    "email": "Anjali.Taneja@axleinfo.com",
+    "github_username": "at1112",
+    "version": "0.1.1",
+    "use_bfio": "True",
+    "project_name": "ImageJ logic",
+    "project_short_description": "IIToIIOutputII$And,IIToIIOutputII$Or,IIToIIOutputII$Xor,IIToRAIOutputII$And,IIToRAIOutputII$Or,IIToRAIOutputII$Xor",
+    "plugin_namespace": {
+        "IIToIIOutputII$And": "out = ij.op().logic().and(in1,in2)",
+        "IIToIIOutputII$Or": "out = ij.op().logic().or(in1,in2)",
+        "IIToIIOutputII$Xor": "out = ij.op().logic().xor(in1,in2)",
+        "IIToRAIOutputII$And": "out = ij.op().logic().and(in1,in2)",
+        "IIToRAIOutputII$Or": "out = ij.op().logic().or(in1,in2)",
+        "IIToRAIOutputII$Xor": "out = ij.op().logic().xor(in1,in2)"
+    },
+    "_inputs": {
+        "opName": {
+            "title": "Operation",
+            "type": "enum",
+            "options": [
+                "IIToIIOutputII$And",
+                "IIToIIOutputII$Or",
+                "IIToIIOutputII$Xor",
+                "IIToRAIOutputII$And",
+                "IIToRAIOutputII$Or",
+                "IIToRAIOutputII$Xor"
+            ],
+            "description": "Operation to perform",
+            "required": true
+        },
+        "in1": {
+            "type": "collection",
+            "title": "in1",
+            "description": "in1",
+            "required": true,
+            "call_types": {
+                "IIToIIOutputII$And": "IterableInterval",
+                "IIToIIOutputII$Or": "IterableInterval",
+                "IIToIIOutputII$Xor": "IterableInterval",
+                "IIToRAIOutputII$And": "IterableInterval",
+                "IIToRAIOutputII$Or": "IterableInterval",
+                "IIToRAIOutputII$Xor": "IterableInterval"
+            }
+        },
+        "in2": {
+            "type": "collection",
+            "title": "in2",
+            "description": "in2",
+            "required": true,
+            "call_types": {
+                "IIToIIOutputII$And": "IterableInterval",
+                "IIToIIOutputII$Or": "IterableInterval",
+                "IIToIIOutputII$Xor": "IterableInterval",
+                "IIToRAIOutputII$And": "RandomAccessibleInterval",
+                "IIToRAIOutputII$Or": "RandomAccessibleInterval",
+                "IIToRAIOutputII$Xor": "RandomAccessibleInterval"
+            }
+        }
+    },
+    "_outputs": {
+        "out": {
+            "type": "collection",
+            "title": "out",
+            "description": "out",
+            "call_types": {
+                "IIToIIOutputII$And": "IterableInterval",
+                "IIToIIOutputII$Or": "IterableInterval",
+                "IIToIIOutputII$Xor": "IterableInterval",
+                "IIToRAIOutputII$And": "IterableInterval",
+                "IIToRAIOutputII$Or": "IterableInterval",
+                "IIToRAIOutputII$Xor": "IterableInterval"
+            }
+        }
+    },
+    "project_slug": "polus-{{ cookiecutter.project_name|lower|replace(' ', '-') }}-plugin"
+}
