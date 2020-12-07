@@ -5,6 +5,7 @@ from pathlib import Path
 import ij_converter
 import jpype
 import imagej
+import scyjava
 
 if __name__=="__main__":
     # Initialize the logger
@@ -13,11 +14,19 @@ if __name__=="__main__":
     logger = logging.getLogger("main")
     logger.setLevel(logging.INFO)
     
+    """ Initialize ImageJ """ 
+    # Bioformats throws a debug message, disable the loci debugger to mute it
+    def disable_loci_logs():
+        DebugTools = scyjava.jimport("loci.common.DebugTools")
+        DebugTools.setRootLevel("WARN")
+    scyjava.when_jvm_starts(disable_loci_logs)
+    
     # This is the version of ImageJ pre-downloaded into the docker container
     logger.info('Starting ImageJ...')
-    ij = imagej.init("sc.fiji:fiji:2.1.1+net.imagej:imagej-legacy:0.37.4")
+    ij = imagej.init("sc.fiji:fiji:2.1.1+net.imagej:imagej-legacy:0.37.4",
+                     headless=True)
     ij_converter.ij = ij
-    logger.info(ij.getVersion())
+    logger.info('Loaded ImageJ version: {}'.format(ij.getVersion()))
 
     ''' Setup Command Line Arguments '''
     logger.info("Parsing arguments...")
@@ -65,8 +74,8 @@ if __name__=="__main__":
       
     if _{{ inp }} == None and _opName in list({{ inp }}_types.keys()):
         raise ValueError('{} must be defined to run {}.'.format('{{ inp }}',_opName))
-    elif _{{ inp }} != None:
     {%- if val.type == "collection" %}
+    elif _{{ inp }} != None:
         {{ inp }}_type = {{ inp }}_types[_opName]
     
         if _{{ inp }}.joinpath('images').is_dir():
@@ -79,7 +88,6 @@ if __name__=="__main__":
         arg_types.append(None)
         args.append([None])
     {%- else %}
-        {{ inp }} = ij_converter.to_java(_{{ inp }},{{ inp }}_types[_opName])
     else:
         {{ inp }} = None
     {%- endif %}
@@ -116,9 +124,13 @@ if __name__=="__main__":
                 {%- if loop.first %}
                 metadata = {{ inp }}_br.metadata
                 fname = {{ inp }}_path.name
-                {%- endif %}
+                dtype = ij.py.dtype({{ inp }})
+            {%- endif %}
             {%- endif %}{% endfor %}
-
+            {% for inp,val in cookiecutter._inputs.items() if val.type!='collection' and inp!='opName' %}
+            if _{{ inp }} != None:
+                {{ inp }} = ij_converter.to_java(_{{ inp }},{{ inp }}_types[_opName],dtype)
+            {% endfor %}
             logger.info('Running op...')
             {% for i,v in cookiecutter.plugin_namespace.items() %}
             {%- if loop.first %}if{% else %}elif{% endif %} _opName == "{{ i }}":
