@@ -1,20 +1,11 @@
-{% if cookiecutter.bfio_version.lower() != 'none' -%}
 from bfio.bfio import BioReader, BioWriter
-{%- endif %}
 import argparse, logging, sys
 import numpy as np
 from pathlib import Path
 import ij_converter
-
-{% if cookiecutter.bfio_container == 'imagej' -%}
-# ImageJ must be loaded prior to jnius being loaded
+import jpype
 import imagej
-
-# This is the version of ImageJ pre-downloaded into the docker container
-ij = imagej.init("sc.fiji:fiji:2.1.1+net.imagej:imagej-legacy:0.37.4")
-
-import jnius
-{%- endif %}
+import scyjava
 
 if __name__=="__main__":
     # Initialize the logger
@@ -22,6 +13,20 @@ if __name__=="__main__":
                         datefmt='%d-%b-%y %H:%M:%S')
     logger = logging.getLogger("main")
     logger.setLevel(logging.INFO)
+    
+    """ Initialize ImageJ """ 
+    # Bioformats throws a debug message, disable the loci debugger to mute it
+    def disable_loci_logs():
+        DebugTools = scyjava.jimport("loci.common.DebugTools")
+        DebugTools.setRootLevel("WARN")
+    scyjava.when_jvm_starts(disable_loci_logs)
+    
+    # This is the version of ImageJ pre-downloaded into the docker container
+    logger.info('Starting ImageJ...')
+    ij = imagej.init("sc.fiji:fiji:2.1.1+net.imagej:imagej-legacy:0.37.4",
+                     headless=True)
+    ij_converter.ij = ij
+    logger.info('Loaded ImageJ version: {}'.format(ij.getVersion()))
 
     ''' Setup Command Line Arguments '''
     logger.info("Parsing arguments...")
@@ -53,7 +58,7 @@ if __name__=="__main__":
     {% endfor %}
     # Output Args
     {%- for out,val in cookiecutter._outputs.items() %}
-    _{{ out }} = args.{{ out }}
+    _{{ out }} = Path(args.{{ out }})
     logger.info('{{ out }} = {}'.format(_{{ out }}))
     {%- endfor %}
     
@@ -69,9 +74,9 @@ if __name__=="__main__":
       
     if _{{ inp }} == None and _opName in list({{ inp }}_types.keys()):
         raise ValueError('{} must be defined to run {}.'.format('{{ inp }}',_opName))
-    elif _{{ inp }} == None:
     {%- if val.type == "collection" %}
-        arg_types.append({{ inp }}_types[_opName])
+    elif _{{ inp }} != None:
+        {{ inp }}_type = {{ inp }}_types[_opName]
     
         if _{{ inp }}.joinpath('images').is_dir():
             # switch to images folder if present
@@ -83,7 +88,6 @@ if __name__=="__main__":
         arg_types.append(None)
         args.append([None])
     {%- else %}
-        {{ inp }} = ij_converter.to_java(_{{ inp }},{{ inp }}_types[_opName])
     else:
         {{ inp }} = None
     {%- endif %}
@@ -99,7 +103,6 @@ if __name__=="__main__":
             
     """ Setup the output """
     {% for out,val in cookiecutter._outputs.items() %}
-    {{ out }}_path = Path(_{{ out }})
     {{ out }}_types = { {% for i,v in val.call_types.items() %}
         "{{ i }}": "{{ v }}",{% endfor %}
     }
@@ -117,17 +120,23 @@ if __name__=="__main__":
                 # Load the first plane of image in {{ inp }} collection
                 logger.info('Processing image: {}'.format({{ inp }}_path))
                 {{ inp }}_br = BioReader({{ inp }}_path)
-                {{ inp }} = ij_converter.to_java(np.squeeze({{ inp }}_br[:,0,0,0]),)
+                {{ inp }} = ij_converter.to_java(np.squeeze({{ inp }}_br[:,:,0:1,0,0]),{{ inp }}_type)
                 {%- if loop.first %}
                 metadata = {{ inp }}_br.metadata
                 fname = {{ inp }}_path.name
-                {%- endif %}
+                dtype = ij.py.dtype({{ inp }})
+            {%- endif %}
             {%- endif %}{% endfor %}
-
+            {% for inp,val in cookiecutter._inputs.items() if val.type!='collection' and inp!='opName' %}
+            if _{{ inp }} != None:
+                {{ inp }} = ij_converter.to_java(_{{ inp }},{{ inp }}_types[_opName],dtype)
+            {% endfor %}
+            logger.info('Running op...')
             {% for i,v in cookiecutter.plugin_namespace.items() %}
             {%- if loop.first %}if{% else %}elif{% endif %} _opName == "{{ i }}":
                 {{ v }}
             {% endfor %}
+            logger.info('Completed op!')
             
             {%- for inp,val in cookiecutter._inputs.items() %}
             {%- if val.type=='collection' %}
@@ -137,14 +146,22 @@ if __name__=="__main__":
             
             {% for out,val in cookiecutter._outputs.items() -%}
             # Save {{ out }}
+            logger.info('Saving...')
             {{ out }}_array = ij_converter.from_java({{ out }},{{ out }}_types[_opName])
-            bw = BioWriter({{ out }}_path.joinpath(),metadata=metadata)
+            bw = BioWriter(_{{ out }}.joinpath(fname),metadata=metadata)
             bw.Z = 1
             bw.dtype = {{ out }}_array.dtype
             bw[:] = {{ out }}_array
             bw.close()
             {%- endfor %}
             
+    except:
+        logger.error('There was an error, shutting down jvm before raising...')
+        raise
+            
     finally:
         # Exit the program
-        sys.exit()
+        logger.info('Shutting down jvm...')
+        del ij
+        jpype.shutdownJVM()
+        logger.info('Complete!')

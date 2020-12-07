@@ -8,13 +8,11 @@ iteratively.
 '''
 import re, json, pprint, logging, copy
 from pathlib import Path
-import imagej
+import imagej, scyjava
 
 """ Parse ImageJ Op Metadata """
 # Start PyImageJ
-ij = imagej.init('sc.fiji:fiji')
-
-import jnius
+ij = imagej.init("sc.fiji:fiji:2.1.1+net.imagej:imagej-legacy:0.37.4",headless=True)
 
 # Get a list of plugins related to ops
 plugin_list = list(ij.op().ops().iterator())
@@ -22,11 +20,12 @@ plugin_list = list(ij.op().ops().iterator())
 # List of plugins to skip
 skip_classes = [
     'copy',
-    'create.img'
+    'create.img',
+    'create.imgPlus'
 ]
 
 # Get op subclass metadata
-text = ij.op().help()
+text = scyjava.to_python(ij.op().help())
 
 """ Type Conversions """
 # Values that map to collection
