@@ -17,4 +17,4 @@ for thresh in [1000, 100, 10]:
 
 ##GaussRAISingleSigma
 for sigma in [1000, 100, 10]:
-        os.system('python ../polus-imagej-blurring-plugin/src/main.py --in1 ./INP1  --sigma {} --out ./OUTP1 --opName "ApplyConstantThreshold"'.format(thresh))
+        os.system('python ../polus-imagej-blurring-plugin/src/main.py --in1 ./INP1  --sigma {} --out ./OUTP1 --opName "GaussRAISingleSigma"'.format(thresh))
