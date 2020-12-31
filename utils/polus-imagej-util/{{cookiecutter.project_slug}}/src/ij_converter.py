@@ -1,9 +1,20 @@
+
+'''
+A conversion utility built to convert abstract to primitive
+This works for Threshold Apply and Gaussian Filter functions
+Note change from jnius to jpype for handling conversions in ij_converter.py
+
+'''
+
 import imagej
 import logging
 import imglyb
 import jpype
 import numpy as np
 import scyjava
+
+##connect type map from populate.py 
+from populate.py import IMAGEJ_WIPP_TYPE
 
 # Initialize the logger
 logging.basicConfig(format='%(asctime)s - %(name)-8s - %(levelname)-8s - %(message)s',
@@ -13,6 +24,7 @@ logger.setLevel(logging.INFO)
 
 ij = None
 
+## fill in types to convert
 ABSTRACT_ITERABLES = [
     'IterableInterval',
     'Iterable'
@@ -26,6 +38,7 @@ SCALARS = [
     'double'
 ]
 
+## recognize array objects as scalar objects + '[]'
 ARRAYS = [s+'[]' for s in SCALARS]
 
 def _java_setup():
@@ -79,13 +92,13 @@ JAVA_CONVERT.update({
 })
 
 def to_java(np_array,java_type,java_dtype=None):
-    
+
     if ij == None:
         raise ValueError('No imagej instance found.')
-    
+
     if isinstance(np_array,type(None)):
         return None
-    
+
     if java_type in JAVA_CONVERT.keys():
         if java_dtype != None:
             out_array = JAVA_CONVERT[java_type](np_array,java_type,java_dtype)
@@ -94,15 +107,15 @@ def to_java(np_array,java_type,java_dtype=None):
     else:
         logger.warning('Did not recognize type, {}, will pass default.'.format(java_type))
         out_array = ij.py.to_java(np_array)
-    
+
     return out_array
 
 def from_java(java_array,java_type):
-    
+
     if ij == None:
         raise ValueError('No imagej instance found.')
-    
+
     if ij.py.dtype(java_array) == bool:
         java_array = ij.op().convert().uint8(java_array)
-    
-    return ij.py.from_java(java_array)
+
+    return ij.py.from_java(java_array) 

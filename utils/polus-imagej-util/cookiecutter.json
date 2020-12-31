@@ -5,49 +5,19 @@
     "version": "0.1.1",
     "bfio_version": "2.0.0a4",
     "bfio_container": "imagej",
-    "project_name": "ImageJ convert",
-    "project_short_description": "ConvertImages$Bit,ConvertImages$Cfloat32,ConvertImages$Cfloat64,ConvertImages$Float32,ConvertImages$Float64,ConvertImages$Int16,ConvertImages$Int32,ConvertImages$Int64,ConvertImages$Int8,ConvertImages$Uint12,ConvertImages$Uint128,ConvertImages$Uint16,ConvertImages$Uint2,ConvertImages$Uint32,ConvertImages$Uint4,ConvertImages$Uint64,ConvertImages$Uint8",
+    "project_name": "ImageJ filter correlate",
+    "project_short_description": "PadAndCorrelateFFT,CorrelateFFTC",
     "plugin_namespace": {
-        "ConvertImages$Bit": "out = ij.op().convert().bit(in1)",
-        "ConvertImages$Cfloat32": "out = ij.op().convert().cfloat32(in1)",
-        "ConvertImages$Cfloat64": "out = ij.op().convert().cfloat64(in1)",
-        "ConvertImages$Float32": "out = ij.op().convert().float32(in1)",
-        "ConvertImages$Float64": "out = ij.op().convert().float64(in1)",
-        "ConvertImages$Int16": "out = ij.op().convert().int16(in1)",
-        "ConvertImages$Int32": "out = ij.op().convert().int32(in1)",
-        "ConvertImages$Int64": "out = ij.op().convert().int64(in1)",
-        "ConvertImages$Int8": "out = ij.op().convert().int8(in1)",
-        "ConvertImages$Uint12": "out = ij.op().convert().uint12(in1)",
-        "ConvertImages$Uint128": "out = ij.op().convert().uint128(in1)",
-        "ConvertImages$Uint16": "out = ij.op().convert().uint16(in1)",
-        "ConvertImages$Uint2": "out = ij.op().convert().uint2(in1)",
-        "ConvertImages$Uint32": "out = ij.op().convert().uint32(in1)",
-        "ConvertImages$Uint4": "out = ij.op().convert().uint4(in1)",
-        "ConvertImages$Uint64": "out = ij.op().convert().uint64(in1)",
-        "ConvertImages$Uint8": "out = ij.op().convert().uint8(in1)"
+        "PadAndCorrelateFFT": "out = ij.op().filter().correlate(in1,in2)",
+        "CorrelateFFTC": "out = ij.op().filter().correlate(in1,in2)"
     },
     "_inputs": {
         "opName": {
             "title": "Operation",
             "type": "enum",
             "options": [
-                "ConvertImages$Bit",
-                "ConvertImages$Cfloat32",
-                "ConvertImages$Cfloat64",
-                "ConvertImages$Float32",
-                "ConvertImages$Float64",
-                "ConvertImages$Int16",
-                "ConvertImages$Int32",
-                "ConvertImages$Int64",
-                "ConvertImages$Int8",
-                "ConvertImages$Uint12",
-                "ConvertImages$Uint128",
-                "ConvertImages$Uint16",
-                "ConvertImages$Uint2",
-                "ConvertImages$Uint32",
-                "ConvertImages$Uint4",
-                "ConvertImages$Uint64",
-                "ConvertImages$Uint8"
+                "PadAndCorrelateFFT",
+                "CorrelateFFTC"
             ],
             "description": "Operation to perform",
             "required": false
@@ -58,23 +28,18 @@
             "description": "in1",
             "required": false,
             "call_types": {
-                "ConvertImages$Bit": "IterableInterval",
-                "ConvertImages$Cfloat32": "IterableInterval",
-                "ConvertImages$Cfloat64": "IterableInterval",
-                "ConvertImages$Float32": "IterableInterval",
-                "ConvertImages$Float64": "IterableInterval",
-                "ConvertImages$Int16": "IterableInterval",
-                "ConvertImages$Int32": "IterableInterval",
-                "ConvertImages$Int64": "IterableInterval",
-                "ConvertImages$Int8": "IterableInterval",
-                "ConvertImages$Uint12": "IterableInterval",
-                "ConvertImages$Uint128": "IterableInterval",
-                "ConvertImages$Uint16": "IterableInterval",
-                "ConvertImages$Uint2": "IterableInterval",
-                "ConvertImages$Uint32": "IterableInterval",
-                "ConvertImages$Uint4": "IterableInterval",
-                "ConvertImages$Uint64": "IterableInterval",
-                "ConvertImages$Uint8": "IterableInterval"
+                "PadAndCorrelateFFT": "RandomAccessibleInterval",
+                "CorrelateFFTC": "RandomAccessibleInterval"
+            }
+        },
+        "in2": {
+            "type": "collection",
+            "title": "in2",
+            "description": "in2",
+            "required": false,
+            "call_types": {
+                "PadAndCorrelateFFT": "RandomAccessibleInterval",
+                "CorrelateFFTC": "RandomAccessibleInterval"
             }
         }
     },
@@ -84,23 +49,8 @@
             "title": "out",
             "description": "out",
             "call_types": {
-                "ConvertImages$Bit": "Img",
-                "ConvertImages$Cfloat32": "Img",
-                "ConvertImages$Cfloat64": "Img",
-                "ConvertImages$Float32": "Img",
-                "ConvertImages$Float64": "Img",
-                "ConvertImages$Int16": "Img",
-                "ConvertImages$Int32": "Img",
-                "ConvertImages$Int64": "Img",
-                "ConvertImages$Int8": "Img",
-                "ConvertImages$Uint12": "Img",
-                "ConvertImages$Uint128": "Img",
-                "ConvertImages$Uint16": "Img",
-                "ConvertImages$Uint2": "Img",
-                "ConvertImages$Uint32": "Img",
-                "ConvertImages$Uint4": "Img",
-                "ConvertImages$Uint64": "Img",
-                "ConvertImages$Uint8": "Img"
+                "PadAndCorrelateFFT": "RandomAccessibleInterval",
+                "CorrelateFFTC": "RandomAccessibleInterval"
             }
         }
     },

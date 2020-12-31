@@ -5,17 +5,40 @@ function call. I have manually mapped some ImageJ datatypes to WIPP types, and
 attempt to populate a cookiecutter.json from this formatted dictionary
 iteratively.
 
+This script creates cookiecutter "dictionaries" (cookiecutter.json files) which take
+collections as both inputs and outputs.
+
+This script must be run prior to generate.py
+
+Logging functions can be commented out or can initialize system to print to a file using stdout
+
 '''
 import re, json, pprint, logging, copy
 from pathlib import Path
 import imagej, scyjava
+import logging
+import os
+import sys
+
+
+old_stdout = sys.stdout
+
+log_file = open("excluded_log.log","w")
+
+sys.stdout = log_file
+
+print("this will be written to message.log")
+
+#sys.stdout = old_stdout
+
 
 """ Parse ImageJ Op Metadata """
 # Start PyImageJ
 ij = imagej.init("sc.fiji:fiji:2.1.1+net.imagej:imagej-legacy:0.37.4",headless=True)
 
-# Get a list of plugins related to ops
+# Get a list of plugins related to ops: [group].[subgroup], e.g. morphology.fillHoles
 plugin_list = list(ij.op().ops().iterator())
+
 
 # List of plugins to skip
 skip_classes = [
@@ -24,10 +47,17 @@ skip_classes = [
     'create.imgPlus'
 ]
 
-# Get op subclass metadata
+# Get op subclass metadata: text contains output of ij.op().help() function
 text = scyjava.to_python(ij.op().help())
 
+
 """ Type Conversions """
+'''
+Manually fill in input/output types from text object above
+Map types to WIPP types
+'''
+
+
 # Values that map to collection
 COLLECTION_TYPES = [
     'Iterable',
@@ -77,11 +107,13 @@ STRING_TYPES = [
     'String'
 ]
 
+##This dictionary "IMAGEJ_WIPP_TYPE" is a type map for IJ-->WIPP types
 IMAGEJ_WIPP_TYPE = {t:'collection' for t in COLLECTION_TYPES}
 IMAGEJ_WIPP_TYPE.update({t:'number' for t in NUMBER_TYPES})
 IMAGEJ_WIPP_TYPE.update({t:'boolean' for t in BOOLEAN_TYPES})
 IMAGEJ_WIPP_TYPE.update({t:'array' for t in ARRAY_TYPES})
 IMAGEJ_WIPP_TYPE.update({t:'string' for t in STRING_TYPES})
+
 
 """ Dictionaries to Generate Cookicutter JSON """
 # Input variable dictionary
@@ -104,7 +136,7 @@ output_dict = {
 # Separator between input/output variables
 separator = ',\n'
 
-# The core of the plugin json
+# The core of the plugin json - a dictionary
 plugin_template = {
     "author": "Anjali Taneja",
     "email": "Anjali.Taneja@axleinfo.com",
@@ -130,6 +162,7 @@ text = text.replace('\n','')
 text = text.replace('\t','')
 text = text.replace('=','= ')
 
+
 # Loop variables
 nested_dict = {}
 keys=[]
@@ -138,15 +171,19 @@ Outputs = []
 count = 0
 
 # Parse inputs/outputs
-split_text = re.compile("([(][a-zA-Z0-9\][a-zA-Z]+[ ]+[a-z?]+[)]+[ ]+[=])+[ ]").split(text) #gets everything but the (RealType out? String errMsg)
+#gets everything but the (RealType out? String errMsg)
+split_text = re.compile("([(][a-zA-Z0-9\][a-zA-Z]+[ ]+[a-z?]+[)]+[ ]+[=])+[ ]").split(text) 
 
 # Loop through ImageJ Ops
 for index,element in enumerate(split_text):
     z = re.match("(?:^|\W)net.imagej.ops.([a-z]+).([a-z0-9A-Z$]+).([a-z0-9A-Z$]+).([a-z0-9A-Z$]+).([a-zA-Z0-9]+)\(([\sa-zA-Z0-9,\[\]\?]*)\)", element)
     if z:
         match_string = z.group(0)
+
+        ##keys contains list of function call components
         keys.append(match_string.split('(')[0].split('.')[3:])
         
+
         output = split_text[index-1]
         outputs = output[1:-3]
         inputs = match_string.split('(')[1][:-1]
@@ -162,7 +199,13 @@ for index,element in enumerate(split_text):
         
         Inputs.append(inputs)
         Outputs.append([outputs])
-        
+
+
+##unique inputs
+flat_list = [item for sublist in Inputs for item in sublist]
+s = set(flat_list)
+
+
 """
 Create a Java class dictionary with defined input/output type conversions
 
@@ -178,31 +221,86 @@ input and a numeric or array type output that could be dumped into a csv.
 
 Also, optional inputs are ignored at the moment. It may be desireable to find a
 way to include them in the future.
+
 """
+
 java_classes = {}
 for index, path in enumerate(keys):
+
+    #class_name is the last entry in this list
     class_name = path[-1]
+    
+    #plugin_name combined with class_name
     plugin_name = '.'.join(path[:-1])
     
+    
+    ##skip over the plugin names we put in the list skip_classes
     if plugin_name in skip_classes:
         continue
-    
+    input_type = "unknown"
+    output_type = "unknown"
     outputs = {o.split(' ')[1].rstrip('?'):
                 {'wipp_type': IMAGEJ_WIPP_TYPE.get(o.split(' ')[0]),
                  'imagej_type': o.split(' ')[0]} for o in Outputs[index]}
-    
+    plugin_full_name = '.'.join(path)
+
+    ##if a plugin doesn't have inputs and outputs as collection types --> log
+
     if 'collection' not in [o['wipp_type'] for o in outputs.values()] or \
-        None in [o['wipp_type'] for o in outputs.values()]:
-        continue
-    
+            None in [o['wipp_type'] for o in outputs.values()]:
+            for o in outputs.values():
+                if(o['wipp_type'] is None):
+                    output_type = None
+                    continue
+                if 'collection' not in o['wipp_type']:
+                    output_type = o['wipp_type']
+                    if index < len(Inputs):
+                        print("index", index)
+                        inputs_temp = {i.split(' ')[1]:
+                            {'wipp_type': IMAGEJ_WIPP_TYPE.get(i.split(' ')[0]),'imagej_type': i.split(' ')[0]} for i in Inputs[index] if not i.endswith('?') and len(i.split(' ')[0])>0}
+                        for i in inputs_temp.values():
+
+                            ##I printed to stdout --> you can change this to print to a specific file or just system
+                            print("INPUT TYPE", i['wipp_type'], "INPUT", i, "OUTPUT TYPE", o['wipp_type'], "OUTPUT", o, "PLUGIN", plugin_full_name)
+                            logging.info('So should this')
+
+            if(output_type is None):
+                s = "plugin: "+plugin_full_name +" input: "+input_type+" output: "+ "NONE" + "\n"
+
+                ##can change log file name
+                #excluded_log.write(s)
+                print("plugin: ",plugin_full_name," input: ",input_type," output: ","NONE")
+                
+            else:
+                print("logging to file... plugin:",plugin_full_name,"input:", input_type,"output:", output_type)
+
+                continue
+
+    output_type = "Collection"
+
     inputs = {i.split(' ')[1]:
                 {'wipp_type': IMAGEJ_WIPP_TYPE.get(i.split(' ')[0]),
                  'imagej_type': i.split(' ')[0]} for i in Inputs[index] if not i.endswith('?')}
     
     if 'collection' not in [i['wipp_type'] for i in inputs.values()] or \
         None in [i['wipp_type'] for i in inputs.values()]:
+        for i in inputs.values():
+            if(i['wipp_type'] is None):
+                input_type = None
+                continue
+            if 'collection' not in i['wipp_type']:
+                input_type = i['wipp_type']
+        if(input_type is None):
+            s = "plugin: "+plugin_full_name +" input: "+"NONE"+" output: "+output_type + "\n"
+            #excluded_log.write(s)
+            
+            print("plugin: ",plugin_full_name," input: ","NONE"," output: ",output_type)
+        else:
+            print("logging to file... plugin:",plugin_full_name,"input:", input_type,"output:", output_type)
         continue
-    
+
+    ## at this point, input IS A COLLECTION
+
     if plugin_name in java_classes.keys():
         java_classes[plugin_name].update({
             class_name: {
@@ -224,8 +322,10 @@ for index, path in enumerate(keys):
 This section of code uses all the above information to build a dictionary that
 can be exported as a cookiecutter json file. The Java classes found above are
 grouped by the plugin
+
 """
 plugins = {}
+skipped = []
 count = 0
 for plugin_name,plugin_info in java_classes.items():
     
@@ -263,6 +363,7 @@ for plugin_name,plugin_info in java_classes.items():
         plugin_namespace[op_name] += ','.join(list(op_info['_inputs'].keys())) + ')'
         
     plugin_dict['plugin_namespace'] = plugin_namespace
+    
     
     # Create an enum to select an op for the plugin
     inp = {
@@ -311,3 +412,7 @@ for plugin_name,plugin_info in java_classes.items():
     
     with open(file_path.joinpath('cookiecutter.json'),'w') as fw:
         json.dump(plugin_dict,fw,indent=4)
+
+excluded_log.close()
+
+

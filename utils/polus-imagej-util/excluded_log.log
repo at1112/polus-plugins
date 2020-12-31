@@ -1,0 +1,1716 @@
+this will be written to message.log
+index 0
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultVerticesCountPolygon
+logging to file... plugin: geom.geom2d.DefaultVerticesCountPolygon input: unknown output: number
+index 1
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultVerticesCountConvexHullPolygon
+logging to file... plugin: geom.geom2d.DefaultVerticesCountConvexHullPolygon input: unknown output: number
+index 2
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultConvexityPolygon
+logging to file... plugin: geom.geom2d.DefaultConvexityPolygon input: unknown output: number
+index 3
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultBoundarySizeConvexHullPolygon
+logging to file... plugin: geom.geom2d.DefaultBoundarySizeConvexHullPolygon input: unknown output: number
+index 4
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultBoxivityPolygon
+logging to file... plugin: geom.geom2d.DefaultBoxivityPolygon input: unknown output: number
+index 5
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultSizeConvexHullPolygon
+logging to file... plugin: geom.geom2d.DefaultSizeConvexHullPolygon input: unknown output: number
+index 6
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultSolidityPolygon
+logging to file... plugin: geom.geom2d.DefaultSolidityPolygon input: unknown output: number
+index 7
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultBoxivityMesh
+logging to file... plugin: geom.geom3d.DefaultBoxivityMesh input: unknown output: number
+index 8
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultCompactness
+logging to file... plugin: geom.geom3d.DefaultCompactness input: unknown output: number
+index 9
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultVerticesCountConvexHullMesh
+logging to file... plugin: geom.geom3d.DefaultVerticesCountConvexHullMesh input: unknown output: number
+index 10
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultVolumeConvexHullMesh
+logging to file... plugin: geom.geom3d.DefaultVolumeConvexHullMesh input: unknown output: number
+index 11
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultConvexityMesh
+logging to file... plugin: geom.geom3d.DefaultConvexityMesh input: unknown output: number
+index 12
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultMainElongation
+logging to file... plugin: geom.geom3d.DefaultMainElongation input: unknown output: number
+index 13
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultMedianElongation
+logging to file... plugin: geom.geom3d.DefaultMedianElongation input: unknown output: number
+index 14
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultSolidityMesh
+logging to file... plugin: geom.geom3d.DefaultSolidityMesh input: unknown output: number
+index 15
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultSparenessMesh
+logging to file... plugin: geom.geom3d.DefaultSparenessMesh input: unknown output: number
+index 16
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultSphericity
+logging to file... plugin: geom.geom3d.DefaultSphericity input: unknown output: number
+index 17
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultSurfaceArea
+logging to file... plugin: geom.geom3d.DefaultSurfaceArea input: unknown output: number
+index 18
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultSurfaceAreaConvexHullMesh
+logging to file... plugin: geom.geom3d.DefaultSurfaceAreaConvexHullMesh input: unknown output: number
+index 19
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultVerticesCountMesh
+logging to file... plugin: geom.geom3d.DefaultVerticesCountMesh input: unknown output: number
+index 20
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.SizeII
+logging to file... plugin: geom.SizeII input: unknown output: number
+index 21
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.IterableCentralMoment00
+logging to file... plugin: imagemoments.centralmoments.IterableCentralMoment00 input: unknown output: number
+index 22
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.DefaultCentralMoment01
+logging to file... plugin: imagemoments.centralmoments.DefaultCentralMoment01 input: unknown output: number
+index 23
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.DefaultCentralMoment10
+logging to file... plugin: imagemoments.centralmoments.DefaultCentralMoment10 input: unknown output: number
+index 24
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.IterableCentralMoment11
+logging to file... plugin: imagemoments.centralmoments.IterableCentralMoment11 input: unknown output: number
+index 25
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.moments.DefaultMoment00
+logging to file... plugin: imagemoments.moments.DefaultMoment00 input: unknown output: number
+index 26
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.moments.DefaultMoment01
+logging to file... plugin: imagemoments.moments.DefaultMoment01 input: unknown output: number
+index 27
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.moments.DefaultMoment10
+logging to file... plugin: imagemoments.moments.DefaultMoment10 input: unknown output: number
+index 28
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.moments.DefaultMoment11
+logging to file... plugin: imagemoments.moments.DefaultMoment11 input: unknown output: number
+index 29
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.IterableGeometricMean
+logging to file... plugin: stats.IterableGeometricMean input: unknown output: number
+index 30
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.IterableHarmonicMean
+logging to file... plugin: stats.IterableHarmonicMean input: unknown output: number
+index 31
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.IterableMax
+logging to file... plugin: stats.IterableMax input: unknown output: number
+index 32
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.IterableMean
+logging to file... plugin: stats.IterableMean input: unknown output: number
+index 33
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.IterableMin
+logging to file... plugin: stats.IterableMin input: unknown output: number
+index 34
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.IISize
+logging to file... plugin: stats.IISize input: unknown output: number
+index 35
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.IterableStandardDeviation
+logging to file... plugin: stats.IterableStandardDeviation input: unknown output: number
+index 36
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.IterableVariance
+logging to file... plugin: stats.IterableVariance input: unknown output: number
+logging to file... plugin: slice.SliceRAI2RAI input: array output: Collection
+index 42
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultSizePolygon
+logging to file... plugin: geom.geom2d.DefaultSizePolygon input: unknown output: number
+index 43
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom3d.DefaultVolumeMesh
+logging to file... plugin: geom.geom3d.DefaultVolumeMesh input: unknown output: number
+plugin:  filter.pad.PadShiftKernel  input:  NONE  output:  Collection
+logging to file... plugin: math.ConstantToArrayImageP$AddByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$AddDouble input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$AddFloat input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$AddInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$AddLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$AddShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$AddUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$AddUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$AddUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$AddUnsignedShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$DivideByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$DivideDouble input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$DivideFloat input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$DivideInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$DivideLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$DivideShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$DivideUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$DivideUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$DivideUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$DivideUnsignedShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$MultiplyByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$MultiplyDouble input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$MultiplyFloat input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$MultiplyInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$MultiplyLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$MultiplyShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$MultiplyUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$MultiplyUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$MultiplyUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$MultiplyUnsignedShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$SubtractByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$SubtractDouble input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$SubtractFloat input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$SubtractInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$SubtractLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$SubtractShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$SubtractUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$SubtractUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$SubtractUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImageP$SubtractUnsignedShort input: number output: Collection
+plugin:  transform.scaleView.DefaultScaleView  input:  NONE  output:  Collection
+plugin:  create.imgFactory.CreateImgFactoryFromImg  input:  unknown  output:  NONE
+plugin:  create.imgLabeling.CreateImgLabelingFromInterval  input:  unknown  output:  NONE
+index 98
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN filter.addNoise.AddNoiseRealTypeCFI
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN filter.addNoise.AddNoiseRealTypeCFI
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN filter.addNoise.AddNoiseRealTypeCFI
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN filter.addNoise.AddNoiseRealTypeCFI
+logging to file... plugin: filter.addNoise.AddNoiseRealTypeCFI input: unknown output: number
+logging to file... plugin: filter.gauss.DefaultGaussRA input: array output: Collection
+plugin:  filter.pad.DefaultPadShiftKernelFFT  input:  NONE  output:  Collection
+plugin:  filter.pad.PadInputFFTMethods  input:  NONE  output:  Collection
+plugin:  filter.pad.PadShiftKernelFFTMethods  input:  NONE  output:  Collection
+index 105
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Namespace'} OUTPUT TYPE string OUTPUT {'wipp_type': 'string', 'imagej_type': 'String'} PLUGIN help.HelpForNamespace
+logging to file... plugin: help.HelpForNamespace input: unknown output: string
+index 106
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Op'} OUTPUT TYPE string OUTPUT {'wipp_type': 'string', 'imagej_type': 'String'} PLUGIN help.HelpForOp
+logging to file... plugin: help.HelpForOp input: unknown output: string
+plugin:  labeling.MergeLabeling  input:  unknown  output:  NONE
+plugin:  labeling.MergeLabeling  input:  NONE  output:  Collection
+plugin:  map.MapViewIIToII  input:  NONE  output:  Collection
+logging to file... plugin: math.ConstantToArrayImage$AddByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$AddDouble input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$AddFloat input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$AddInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$AddLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$AddShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$AddUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$AddUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$AddUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$AddUnsignedShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$DivideByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$DivideDouble input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$DivideFloat input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$DivideInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$DivideLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$DivideShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$DivideUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$DivideUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$DivideUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$DivideUnsignedShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$MultiplyByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$MultiplyDouble input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$MultiplyFloat input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$MultiplyInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$MultiplyLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$MultiplyShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$MultiplyUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$MultiplyUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$MultiplyUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$MultiplyUnsignedShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$SubtractByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$SubtractDouble input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$SubtractFloat input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$SubtractInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$SubtractLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$SubtractShort input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$SubtractUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$SubtractUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$SubtractUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToArrayImage$SubtractUnsignedShort input: number output: Collection
+index 154
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} PLUGIN math.NumericTypeBinaryMath$Add
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} PLUGIN math.NumericTypeBinaryMath$Add
+logging to file... plugin: math.NumericTypeBinaryMath$Add input: unknown output: number
+index 155
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} PLUGIN math.NumericTypeBinaryMath$Divide
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} PLUGIN math.NumericTypeBinaryMath$Divide
+logging to file... plugin: math.NumericTypeBinaryMath$Divide input: unknown output: number
+index 156
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} PLUGIN math.NumericTypeBinaryMath$Multiply
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} PLUGIN math.NumericTypeBinaryMath$Multiply
+logging to file... plugin: math.NumericTypeBinaryMath$Multiply input: unknown output: number
+index 157
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} PLUGIN math.NumericTypeBinaryMath$Subtract
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'NumericType'} PLUGIN math.NumericTypeBinaryMath$Subtract
+logging to file... plugin: math.NumericTypeBinaryMath$Subtract input: unknown output: number
+index 159
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.huang.ComputeHuangThreshold
+logging to file... plugin: threshold.huang.ComputeHuangThreshold input: unknown output: number
+index 160
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.ij1.ComputeIJ1Threshold
+logging to file... plugin: threshold.ij1.ComputeIJ1Threshold input: unknown output: number
+index 161
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.li.ComputeLiThreshold
+logging to file... plugin: threshold.li.ComputeLiThreshold input: unknown output: number
+index 162
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.maxEntropy.ComputeMaxEntropyThreshold
+logging to file... plugin: threshold.maxEntropy.ComputeMaxEntropyThreshold input: unknown output: number
+index 163
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.mean.ComputeMeanThreshold
+logging to file... plugin: threshold.mean.ComputeMeanThreshold input: unknown output: number
+index 164
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.moments.ComputeMomentsThreshold
+logging to file... plugin: threshold.moments.ComputeMomentsThreshold input: unknown output: number
+index 165
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.otsu.ComputeOtsuThreshold
+logging to file... plugin: threshold.otsu.ComputeOtsuThreshold input: unknown output: number
+index 166
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.percentile.ComputePercentileThreshold
+logging to file... plugin: threshold.percentile.ComputePercentileThreshold input: unknown output: number
+index 167
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.renyiEntropy.ComputeRenyiEntropyThreshold
+logging to file... plugin: threshold.renyiEntropy.ComputeRenyiEntropyThreshold input: unknown output: number
+index 168
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.rosin.ComputeRosinThreshold
+logging to file... plugin: threshold.rosin.ComputeRosinThreshold input: unknown output: number
+index 169
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.shanbhag.ComputeShanbhagThreshold
+logging to file... plugin: threshold.shanbhag.ComputeShanbhagThreshold input: unknown output: number
+index 170
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.triangle.ComputeTriangleThreshold
+logging to file... plugin: threshold.triangle.ComputeTriangleThreshold input: unknown output: number
+index 171
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Histogram1d'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN threshold.yen.ComputeYenThreshold
+logging to file... plugin: threshold.yen.ComputeYenThreshold input: unknown output: number
+plugin:  transform.hyperSliceView.IntervalHyperSliceView  input:  unknown  output:  NONE
+plugin:  transform.invertAxisView.IntervalInvertAxisView  input:  unknown  output:  NONE
+plugin:  transform.permuteView.IntervalPermuteView  input:  unknown  output:  NONE
+plugin:  transform.rotateView.IntervalRotateView  input:  unknown  output:  NONE
+plugin:  transform.subsampleView.IntervalSubsampleView  input:  unknown  output:  NONE
+plugin:  transform.subsampleView.SubsampleIntervalViewStepsForDims  input:  unknown  output:  NONE
+plugin:  transform.translateView.IntervalTranslateView  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$IntegerToBit  input:  unknown  output:  NONE
+logging to file... plugin: convert.ConvertTypes$IntegerToBit input: number output: Collection
+index 180
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'IntegerType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'ShortType'} PLUGIN convert.ConvertTypes$IntegerToInt16
+logging to file... plugin: convert.ConvertTypes$IntegerToInt16 input: unknown output: number
+plugin:  convert.ConvertTypes$IntegerToInt32  input:  unknown  output:  NONE
+logging to file... plugin: convert.ConvertTypes$IntegerToInt32 input: number output: Collection
+index 182
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'IntegerType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'LongType'} PLUGIN convert.ConvertTypes$IntegerToInt64
+logging to file... plugin: convert.ConvertTypes$IntegerToInt64 input: unknown output: number
+index 183
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'IntegerType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'ByteType'} PLUGIN convert.ConvertTypes$IntegerToInt8
+logging to file... plugin: convert.ConvertTypes$IntegerToInt8 input: unknown output: number
+plugin:  convert.ConvertTypes$IntegerToUint12  input:  unknown  output:  NONE
+logging to file... plugin: convert.ConvertTypes$IntegerToUint12 input: number output: Collection
+plugin:  convert.ConvertTypes$IntegerToUint128  input:  unknown  output:  NONE
+logging to file... plugin: convert.ConvertTypes$IntegerToUint128 input: number output: Collection
+index 186
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'IntegerType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'UnsignedShortType'} PLUGIN convert.ConvertTypes$IntegerToUint16
+logging to file... plugin: convert.ConvertTypes$IntegerToUint16 input: unknown output: number
+plugin:  convert.ConvertTypes$IntegerToUint2  input:  unknown  output:  NONE
+logging to file... plugin: convert.ConvertTypes$IntegerToUint2 input: number output: Collection
+plugin:  convert.ConvertTypes$IntegerToUint32  input:  unknown  output:  NONE
+logging to file... plugin: convert.ConvertTypes$IntegerToUint32 input: number output: Collection
+plugin:  convert.ConvertTypes$IntegerToUint4  input:  unknown  output:  NONE
+logging to file... plugin: convert.ConvertTypes$IntegerToUint4 input: number output: Collection
+index 190
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'IntegerType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'UnsignedLongType'} PLUGIN convert.ConvertTypes$IntegerToUint64
+logging to file... plugin: convert.ConvertTypes$IntegerToUint64 input: unknown output: number
+index 191
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'IntegerType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'UnsignedByteType'} PLUGIN convert.ConvertTypes$IntegerToUint8
+logging to file... plugin: convert.ConvertTypes$IntegerToUint8 input: unknown output: number
+plugin:  filter.pad.PadInput  input:  NONE  output:  Collection
+plugin:  filter.pad.PaddingIntervalCentered  input:  NONE  output:  Collection
+plugin:  map.MapUnaryComputers$IIToIIParallel  input:  NONE  output:  Collection
+plugin:  map.MapUnaryComputers$IIToRAIParallel  input:  NONE  output:  Collection
+plugin:  map.MapUnaryComputers$RAIToIIParallel  input:  NONE  output:  Collection
+plugin:  map.MapUnaryComputers$IIToII  input:  NONE  output:  Collection
+index 199
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'LabelRegion'} OUTPUT TYPE string OUTPUT {'wipp_type': 'string', 'imagej_type': 'RealLocalizable'} PLUGIN geom.CentroidLabelRegion
+logging to file... plugin: geom.CentroidLabelRegion input: unknown output: string
+plugin:  map.MapUnaryComputers$IIToRAI  input:  NONE  output:  Collection
+index 205
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE string OUTPUT {'wipp_type': 'string', 'imagej_type': 'RealLocalizable'} PLUGIN geom.CentroidII
+logging to file... plugin: geom.CentroidII input: unknown output: string
+plugin:  labeling.cca.DefaultCCA  input:  unknown  output:  NONE
+plugin:  labeling.cca.DefaultCCA  input:  NONE  output:  Collection
+plugin:  map.MapUnaryComputers$RAIToII  input:  NONE  output:  Collection
+index 208
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanAnd
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanAnd
+logging to file... plugin: logic.PrimitiveLogic$BooleanAnd input: unknown output: boolean
+index 209
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanEqual
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanEqual
+logging to file... plugin: logic.PrimitiveLogic$BooleanEqual input: unknown output: boolean
+index 210
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanNot
+logging to file... plugin: logic.PrimitiveLogic$BooleanNot input: unknown output: boolean
+index 211
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanNotEqual
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanNotEqual
+logging to file... plugin: logic.PrimitiveLogic$BooleanNotEqual input: unknown output: boolean
+index 212
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanOr
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanOr
+logging to file... plugin: logic.PrimitiveLogic$BooleanOr input: unknown output: boolean
+index 213
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanXor
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$BooleanXor
+logging to file... plugin: logic.PrimitiveLogic$BooleanXor input: unknown output: boolean
+index 214
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerEqual
+logging to file... plugin: logic.PrimitiveLogic$IntegerEqual input: unknown output: boolean
+index 215
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerGreaterThan
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerGreaterThan
+logging to file... plugin: logic.PrimitiveLogic$IntegerGreaterThan input: unknown output: boolean
+index 216
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerGreaterThanOrEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerGreaterThanOrEqual
+logging to file... plugin: logic.PrimitiveLogic$IntegerGreaterThanOrEqual input: unknown output: boolean
+index 217
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerLessThan
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerLessThan
+logging to file... plugin: logic.PrimitiveLogic$IntegerLessThan input: unknown output: boolean
+index 218
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerLessThanOrEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerLessThanOrEqual
+logging to file... plugin: logic.PrimitiveLogic$IntegerLessThanOrEqual input: unknown output: boolean
+index 219
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerNotEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$IntegerNotEqual
+logging to file... plugin: logic.PrimitiveLogic$IntegerNotEqual input: unknown output: boolean
+index 220
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerAbs
+logging to file... plugin: math.PrimitiveMath$IntegerAbs input: unknown output: number
+index 221
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerAdd
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerAdd
+logging to file... plugin: math.PrimitiveMath$IntegerAdd input: unknown output: number
+index 222
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerAnd
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerAnd
+logging to file... plugin: math.PrimitiveMath$IntegerAnd input: unknown output: number
+index 223
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerComplement
+logging to file... plugin: math.PrimitiveMath$IntegerComplement input: unknown output: number
+index 224
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerDivide
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerDivide
+logging to file... plugin: math.PrimitiveMath$IntegerDivide input: unknown output: number
+index 225
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerLeftShift
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerLeftShift
+logging to file... plugin: math.PrimitiveMath$IntegerLeftShift input: unknown output: number
+index 226
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerMax
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerMax
+logging to file... plugin: math.PrimitiveMath$IntegerMax input: unknown output: number
+index 227
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerMin
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerMin
+logging to file... plugin: math.PrimitiveMath$IntegerMin input: unknown output: number
+index 228
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerMultiply
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerMultiply
+logging to file... plugin: math.PrimitiveMath$IntegerMultiply input: unknown output: number
+index 229
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerNegate
+logging to file... plugin: math.PrimitiveMath$IntegerNegate input: unknown output: number
+index 230
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerOr
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerOr
+logging to file... plugin: math.PrimitiveMath$IntegerOr input: unknown output: number
+index 231
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerRemainder
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerRemainder
+logging to file... plugin: math.PrimitiveMath$IntegerRemainder input: unknown output: number
+index 232
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerRightShift
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerRightShift
+logging to file... plugin: math.PrimitiveMath$IntegerRightShift input: unknown output: number
+index 233
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerSubtract
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerSubtract
+logging to file... plugin: math.PrimitiveMath$IntegerSubtract input: unknown output: number
+index 234
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerUnsignedRightShift
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerUnsignedRightShift
+logging to file... plugin: math.PrimitiveMath$IntegerUnsignedRightShift input: unknown output: number
+index 235
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerXor
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'int'} PLUGIN math.PrimitiveMath$IntegerXor
+logging to file... plugin: math.PrimitiveMath$IntegerXor input: unknown output: number
+index 236
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongEqual
+logging to file... plugin: logic.PrimitiveLogic$LongEqual input: unknown output: boolean
+index 237
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongGreaterThan
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongGreaterThan
+logging to file... plugin: logic.PrimitiveLogic$LongGreaterThan input: unknown output: boolean
+index 238
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongGreaterThanOrEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongGreaterThanOrEqual
+logging to file... plugin: logic.PrimitiveLogic$LongGreaterThanOrEqual input: unknown output: boolean
+index 239
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongLessThan
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongLessThan
+logging to file... plugin: logic.PrimitiveLogic$LongLessThan input: unknown output: boolean
+index 240
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongLessThanOrEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongLessThanOrEqual
+logging to file... plugin: logic.PrimitiveLogic$LongLessThanOrEqual input: unknown output: boolean
+index 241
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongNotEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$LongNotEqual
+logging to file... plugin: logic.PrimitiveLogic$LongNotEqual input: unknown output: boolean
+index 242
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongAbs
+logging to file... plugin: math.PrimitiveMath$LongAbs input: unknown output: number
+index 243
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongAdd
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongAdd
+logging to file... plugin: math.PrimitiveMath$LongAdd input: unknown output: number
+index 244
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongAnd
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongAnd
+logging to file... plugin: math.PrimitiveMath$LongAnd input: unknown output: number
+index 245
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongComplement
+logging to file... plugin: math.PrimitiveMath$LongComplement input: unknown output: number
+index 246
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongDivide
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongDivide
+logging to file... plugin: math.PrimitiveMath$LongDivide input: unknown output: number
+index 247
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongLeftShift
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongLeftShift
+logging to file... plugin: math.PrimitiveMath$LongLeftShift input: unknown output: number
+index 248
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongMax
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongMax
+logging to file... plugin: math.PrimitiveMath$LongMax input: unknown output: number
+index 249
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongMin
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongMin
+logging to file... plugin: math.PrimitiveMath$LongMin input: unknown output: number
+index 250
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongMultiply
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongMultiply
+logging to file... plugin: math.PrimitiveMath$LongMultiply input: unknown output: number
+index 251
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongNegate
+logging to file... plugin: math.PrimitiveMath$LongNegate input: unknown output: number
+index 252
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongOr
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongOr
+logging to file... plugin: math.PrimitiveMath$LongOr input: unknown output: number
+index 253
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongRemainder
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongRemainder
+logging to file... plugin: math.PrimitiveMath$LongRemainder input: unknown output: number
+index 254
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongRightShift
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongRightShift
+logging to file... plugin: math.PrimitiveMath$LongRightShift input: unknown output: number
+index 255
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongSubtract
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongSubtract
+logging to file... plugin: math.PrimitiveMath$LongSubtract input: unknown output: number
+index 256
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongUnsignedRightShift
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongUnsignedRightShift
+logging to file... plugin: math.PrimitiveMath$LongUnsignedRightShift input: unknown output: number
+index 257
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongXor
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'long'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'long'} PLUGIN math.PrimitiveMath$LongXor
+logging to file... plugin: math.PrimitiveMath$LongXor input: unknown output: number
+index 258
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatEqual
+logging to file... plugin: logic.PrimitiveLogic$FloatEqual input: unknown output: boolean
+index 259
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatGreaterThan
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatGreaterThan
+logging to file... plugin: logic.PrimitiveLogic$FloatGreaterThan input: unknown output: boolean
+index 260
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatGreaterThanOrEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatGreaterThanOrEqual
+logging to file... plugin: logic.PrimitiveLogic$FloatGreaterThanOrEqual input: unknown output: boolean
+index 261
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatLessThan
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatLessThan
+logging to file... plugin: logic.PrimitiveLogic$FloatLessThan input: unknown output: boolean
+index 262
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatLessThanOrEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatLessThanOrEqual
+logging to file... plugin: logic.PrimitiveLogic$FloatLessThanOrEqual input: unknown output: boolean
+index 263
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatNotEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$FloatNotEqual
+logging to file... plugin: logic.PrimitiveLogic$FloatNotEqual input: unknown output: boolean
+index 264
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatAbs
+logging to file... plugin: math.PrimitiveMath$FloatAbs input: unknown output: number
+index 265
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatAdd
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatAdd
+logging to file... plugin: math.PrimitiveMath$FloatAdd input: unknown output: number
+index 266
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatDivide
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatDivide
+logging to file... plugin: math.PrimitiveMath$FloatDivide input: unknown output: number
+index 267
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatMax
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatMax
+logging to file... plugin: math.PrimitiveMath$FloatMax input: unknown output: number
+index 268
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatMin
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatMin
+logging to file... plugin: math.PrimitiveMath$FloatMin input: unknown output: number
+index 269
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatMultiply
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatMultiply
+logging to file... plugin: math.PrimitiveMath$FloatMultiply input: unknown output: number
+index 270
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatNegate
+logging to file... plugin: math.PrimitiveMath$FloatNegate input: unknown output: number
+index 271
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatRemainder
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatRemainder
+logging to file... plugin: math.PrimitiveMath$FloatRemainder input: unknown output: number
+index 272
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatRound
+logging to file... plugin: math.PrimitiveMath$FloatRound input: unknown output: number
+index 273
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatSignum
+logging to file... plugin: math.PrimitiveMath$FloatSignum input: unknown output: number
+index 274
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatSubtract
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'float'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'float'} PLUGIN math.PrimitiveMath$FloatSubtract
+logging to file... plugin: math.PrimitiveMath$FloatSubtract input: unknown output: number
+index 275
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleEqual
+logging to file... plugin: logic.PrimitiveLogic$DoubleEqual input: unknown output: boolean
+index 276
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleGreaterThan
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleGreaterThan
+logging to file... plugin: logic.PrimitiveLogic$DoubleGreaterThan input: unknown output: boolean
+index 277
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleGreaterThanOrEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleGreaterThanOrEqual
+logging to file... plugin: logic.PrimitiveLogic$DoubleGreaterThanOrEqual input: unknown output: boolean
+index 278
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleLessThan
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleLessThan
+logging to file... plugin: logic.PrimitiveLogic$DoubleLessThan input: unknown output: boolean
+index 279
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleLessThanOrEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleLessThanOrEqual
+logging to file... plugin: logic.PrimitiveLogic$DoubleLessThanOrEqual input: unknown output: boolean
+index 280
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleNotEqual
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'boolean'} PLUGIN logic.PrimitiveLogic$DoubleNotEqual
+logging to file... plugin: logic.PrimitiveLogic$DoubleNotEqual input: unknown output: boolean
+index 281
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleAbs
+logging to file... plugin: math.PrimitiveMath$DoubleAbs input: unknown output: number
+index 282
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleAdd
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleAdd
+logging to file... plugin: math.PrimitiveMath$DoubleAdd input: unknown output: number
+index 283
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleArccos
+logging to file... plugin: math.PrimitiveMath$DoubleArccos input: unknown output: number
+index 284
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleArcsin
+logging to file... plugin: math.PrimitiveMath$DoubleArcsin input: unknown output: number
+index 285
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleArctan
+logging to file... plugin: math.PrimitiveMath$DoubleArctan input: unknown output: number
+index 286
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleCeil
+logging to file... plugin: math.PrimitiveMath$DoubleCeil input: unknown output: number
+index 287
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleCos
+logging to file... plugin: math.PrimitiveMath$DoubleCos input: unknown output: number
+index 288
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleCosh
+logging to file... plugin: math.PrimitiveMath$DoubleCosh input: unknown output: number
+index 289
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleCubeRoot
+logging to file... plugin: math.PrimitiveMath$DoubleCubeRoot input: unknown output: number
+index 290
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleDivide
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleDivide
+logging to file... plugin: math.PrimitiveMath$DoubleDivide input: unknown output: number
+index 291
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleExp
+logging to file... plugin: math.PrimitiveMath$DoubleExp input: unknown output: number
+index 292
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleFloor
+logging to file... plugin: math.PrimitiveMath$DoubleFloor input: unknown output: number
+index 293
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleLog
+logging to file... plugin: math.PrimitiveMath$DoubleLog input: unknown output: number
+index 294
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleLog10
+logging to file... plugin: math.PrimitiveMath$DoubleLog10 input: unknown output: number
+index 295
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleLogOnePlusX
+logging to file... plugin: math.PrimitiveMath$DoubleLogOnePlusX input: unknown output: number
+index 296
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleMax
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleMax
+logging to file... plugin: math.PrimitiveMath$DoubleMax input: unknown output: number
+index 297
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleMin
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleMin
+logging to file... plugin: math.PrimitiveMath$DoubleMin input: unknown output: number
+index 298
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleMultiply
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleMultiply
+logging to file... plugin: math.PrimitiveMath$DoubleMultiply input: unknown output: number
+index 299
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleNegate
+logging to file... plugin: math.PrimitiveMath$DoubleNegate input: unknown output: number
+index 300
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoublePower
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoublePower
+logging to file... plugin: math.PrimitiveMath$DoublePower input: unknown output: number
+index 301
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleRemainder
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleRemainder
+logging to file... plugin: math.PrimitiveMath$DoubleRemainder input: unknown output: number
+index 302
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleRound
+logging to file... plugin: math.PrimitiveMath$DoubleRound input: unknown output: number
+index 303
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleSignum
+logging to file... plugin: math.PrimitiveMath$DoubleSignum input: unknown output: number
+index 304
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleSin
+logging to file... plugin: math.PrimitiveMath$DoubleSin input: unknown output: number
+index 305
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleSinh
+logging to file... plugin: math.PrimitiveMath$DoubleSinh input: unknown output: number
+index 306
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleSqrt
+logging to file... plugin: math.PrimitiveMath$DoubleSqrt input: unknown output: number
+index 307
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleSubtract
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleSubtract
+logging to file... plugin: math.PrimitiveMath$DoubleSubtract input: unknown output: number
+index 308
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleTan
+logging to file... plugin: math.PrimitiveMath$DoubleTan input: unknown output: number
+index 309
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'double'} PLUGIN math.PrimitiveMath$DoubleTanh
+logging to file... plugin: math.PrimitiveMath$DoubleTanh input: unknown output: number
+index 310
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'ArrayList'} PLUGIN features.lbp2d.DefaultLBP2D
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'ArrayList'} PLUGIN features.lbp2d.DefaultLBP2D
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'ArrayList'} PLUGIN features.lbp2d.DefaultLBP2D
+logging to file... plugin: features.lbp2d.DefaultLBP2D input: unknown output: array
+index 311
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultCircularity
+logging to file... plugin: geom.geom2d.DefaultCircularity input: unknown output: number
+index 312
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultEccentricity
+logging to file... plugin: geom.geom2d.DefaultEccentricity input: unknown output: number
+index 313
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultElongation
+logging to file... plugin: geom.geom2d.DefaultElongation input: unknown output: number
+index 314
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Pair'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultFeretsAngle
+logging to file... plugin: geom.geom2d.DefaultFeretsAngle input: unknown output: number
+index 315
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Pair'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultFeretsDiameter
+logging to file... plugin: geom.geom2d.DefaultFeretsDiameter input: unknown output: number
+index 316
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultMajorAxis
+logging to file... plugin: geom.geom2d.DefaultMajorAxis input: unknown output: number
+index 317
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultMinorAxis
+logging to file... plugin: geom.geom2d.DefaultMinorAxis input: unknown output: number
+index 318
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultPerimeterLength
+logging to file... plugin: geom.geom2d.DefaultPerimeterLength input: unknown output: number
+index 319
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultRoundness
+logging to file... plugin: geom.geom2d.DefaultRoundness input: unknown output: number
+plugin:  geom.geom2d.DefaultSmallestEnclosingRectangle  input:  unknown  output:  NONE
+plugin:  geom.geom2d.DefaultSmallestEnclosingRectangle  input:  NONE  output:  Collection
+plugin:  geom.geom3d.mesh.DefaultSmallestOrientedBoundingBox  input:  unknown  output:  NONE
+plugin:  geom.geom3d.mesh.DefaultSmallestOrientedBoundingBox  input:  NONE  output:  Collection
+index 322
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE string OUTPUT {'wipp_type': 'string', 'imagej_type': 'RealLocalizable'} PLUGIN geom.CentroidPolygon
+logging to file... plugin: geom.CentroidPolygon input: unknown output: string
+index 323
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Mesh'} OUTPUT TYPE string OUTPUT {'wipp_type': 'string', 'imagej_type': 'RealLocalizable'} PLUGIN geom.CentroidMesh
+logging to file... plugin: geom.CentroidMesh input: unknown output: string
+index 324
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultClusterPromenence
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultClusterPromenence
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultClusterPromenence
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultClusterPromenence
+logging to file... plugin: features.haralick.DefaultClusterPromenence input: unknown output: number
+index 325
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultClusterShade
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultClusterShade
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultClusterShade
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultClusterShade
+logging to file... plugin: features.haralick.DefaultClusterShade input: unknown output: number
+index 326
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultContrast
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultContrast
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultContrast
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultContrast
+logging to file... plugin: features.haralick.DefaultContrast input: unknown output: number
+index 327
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultCorrelation
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultCorrelation
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultCorrelation
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultCorrelation
+logging to file... plugin: features.haralick.DefaultCorrelation input: unknown output: number
+index 328
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultDifferenceEntropy
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultDifferenceEntropy
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultDifferenceEntropy
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultDifferenceEntropy
+logging to file... plugin: features.haralick.DefaultDifferenceEntropy input: unknown output: number
+index 329
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultDifferenceVariance
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultDifferenceVariance
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultDifferenceVariance
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultDifferenceVariance
+logging to file... plugin: features.haralick.DefaultDifferenceVariance input: unknown output: number
+index 330
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultEntropy
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultEntropy
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultEntropy
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultEntropy
+logging to file... plugin: features.haralick.DefaultEntropy input: unknown output: number
+index 331
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultICM1
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultICM1
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultICM1
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultICM1
+logging to file... plugin: features.haralick.DefaultICM1 input: unknown output: number
+index 332
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultICM2
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultICM2
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultICM2
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultICM2
+logging to file... plugin: features.haralick.DefaultICM2 input: unknown output: number
+index 333
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultIFDM
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultIFDM
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultIFDM
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultIFDM
+logging to file... plugin: features.haralick.DefaultIFDM input: unknown output: number
+index 334
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultMaxProbability
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultMaxProbability
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultMaxProbability
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultMaxProbability
+logging to file... plugin: features.haralick.DefaultMaxProbability input: unknown output: number
+index 335
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumAverage
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumAverage
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumAverage
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumAverage
+logging to file... plugin: features.haralick.DefaultSumAverage input: unknown output: number
+index 336
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumEntropy
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumEntropy
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumEntropy
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumEntropy
+logging to file... plugin: features.haralick.DefaultSumEntropy input: unknown output: number
+index 337
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumVariance
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumVariance
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumVariance
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultSumVariance
+logging to file... plugin: features.haralick.DefaultSumVariance input: unknown output: number
+index 338
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultTextureHomogeneity
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultTextureHomogeneity
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultTextureHomogeneity
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultTextureHomogeneity
+logging to file... plugin: features.haralick.DefaultTextureHomogeneity input: unknown output: number
+index 339
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultVariance
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultVariance
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultVariance
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultVariance
+logging to file... plugin: features.haralick.DefaultVariance input: unknown output: number
+index 340
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.DefaultCentralMoment00
+logging to file... plugin: imagemoments.centralmoments.DefaultCentralMoment00 input: unknown output: number
+index 341
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.DefaultCentralMoment02
+logging to file... plugin: imagemoments.centralmoments.DefaultCentralMoment02 input: unknown output: number
+index 342
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.DefaultCentralMoment03
+logging to file... plugin: imagemoments.centralmoments.DefaultCentralMoment03 input: unknown output: number
+index 343
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.DefaultCentralMoment11
+logging to file... plugin: imagemoments.centralmoments.DefaultCentralMoment11 input: unknown output: number
+index 344
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.DefaultCentralMoment12
+logging to file... plugin: imagemoments.centralmoments.DefaultCentralMoment12 input: unknown output: number
+index 345
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.DefaultCentralMoment20
+logging to file... plugin: imagemoments.centralmoments.DefaultCentralMoment20 input: unknown output: number
+index 346
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.DefaultCentralMoment21
+logging to file... plugin: imagemoments.centralmoments.DefaultCentralMoment21 input: unknown output: number
+index 347
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.centralmoments.DefaultCentralMoment30
+logging to file... plugin: imagemoments.centralmoments.DefaultCentralMoment30 input: unknown output: number
+index 348
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.hu.DefaultHuMoment1
+logging to file... plugin: imagemoments.hu.DefaultHuMoment1 input: unknown output: number
+index 349
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.hu.DefaultHuMoment2
+logging to file... plugin: imagemoments.hu.DefaultHuMoment2 input: unknown output: number
+index 350
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.hu.DefaultHuMoment3
+logging to file... plugin: imagemoments.hu.DefaultHuMoment3 input: unknown output: number
+index 351
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.hu.DefaultHuMoment4
+logging to file... plugin: imagemoments.hu.DefaultHuMoment4 input: unknown output: number
+index 352
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.hu.DefaultHuMoment5
+logging to file... plugin: imagemoments.hu.DefaultHuMoment5 input: unknown output: number
+index 353
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.hu.DefaultHuMoment6
+logging to file... plugin: imagemoments.hu.DefaultHuMoment6 input: unknown output: number
+index 354
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.hu.DefaultHuMoment7
+logging to file... plugin: imagemoments.hu.DefaultHuMoment7 input: unknown output: number
+index 355
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment02
+logging to file... plugin: imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment02 input: unknown output: number
+index 356
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment03
+logging to file... plugin: imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment03 input: unknown output: number
+index 357
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment11
+logging to file... plugin: imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment11 input: unknown output: number
+index 358
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment12
+logging to file... plugin: imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment12 input: unknown output: number
+index 359
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment20
+logging to file... plugin: imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment20 input: unknown output: number
+index 360
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment21
+logging to file... plugin: imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment21 input: unknown output: number
+index 361
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment30
+logging to file... plugin: imagemoments.normalizedcentralmoments.DefaultNormalizedCentralMoment30 input: unknown output: number
+index 362
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultGeometricMean
+logging to file... plugin: stats.DefaultGeometricMean input: unknown output: number
+index 363
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultHarmonicMean
+logging to file... plugin: stats.DefaultHarmonicMean input: unknown output: number
+index 364
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultKurtosis
+logging to file... plugin: stats.DefaultKurtosis input: unknown output: number
+index 365
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultMedian
+logging to file... plugin: stats.DefaultMedian input: unknown output: number
+plugin:  stats.DefaultMinMax  input:  unknown  output:  NONE
+index 367
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultMoment1AboutMean
+logging to file... plugin: stats.DefaultMoment1AboutMean input: unknown output: number
+index 368
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultMoment2AboutMean
+logging to file... plugin: stats.DefaultMoment2AboutMean input: unknown output: number
+index 369
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultMoment3AboutMean
+logging to file... plugin: stats.DefaultMoment3AboutMean input: unknown output: number
+index 370
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultMoment4AboutMean
+logging to file... plugin: stats.DefaultMoment4AboutMean input: unknown output: number
+index 371
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultPercentile
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultPercentile
+logging to file... plugin: stats.DefaultPercentile input: unknown output: number
+index 372
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultQuantile
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultQuantile
+logging to file... plugin: stats.DefaultQuantile input: unknown output: number
+index 373
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultSize
+logging to file... plugin: stats.DefaultSize input: unknown output: number
+index 374
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultSkewness
+logging to file... plugin: stats.DefaultSkewness input: unknown output: number
+index 375
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultStandardDeviation
+logging to file... plugin: stats.DefaultStandardDeviation input: unknown output: number
+index 376
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultSum
+logging to file... plugin: stats.DefaultSum input: unknown output: number
+index 377
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultSumOfInverses
+logging to file... plugin: stats.DefaultSumOfInverses input: unknown output: number
+index 378
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultSumOfLogs
+logging to file... plugin: stats.DefaultSumOfLogs input: unknown output: number
+index 379
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultSumOfSquares
+logging to file... plugin: stats.DefaultSumOfSquares input: unknown output: number
+index 380
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultVariance
+logging to file... plugin: stats.DefaultVariance input: unknown output: number
+index 381
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN features.tamura2d.DefaultCoarsenessFeature
+logging to file... plugin: features.tamura2d.DefaultCoarsenessFeature input: unknown output: number
+index 382
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN features.tamura2d.DefaultContrastFeature
+logging to file... plugin: features.tamura2d.DefaultContrastFeature input: unknown output: number
+index 383
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN features.tamura2d.DefaultDirectionalityFeature
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN features.tamura2d.DefaultDirectionalityFeature
+logging to file... plugin: features.tamura2d.DefaultDirectionalityFeature input: unknown output: number
+plugin:  transform.addDimensionView.DefaultAddDimensionView  input:  unknown  output:  NONE
+plugin:  transform.addDimensionView.DefaultAddDimensionView  input:  NONE  output:  Collection
+plugin:  transform.addDimensionView.AddDimensionViewMinMax  input:  unknown  output:  NONE
+index 386
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN features.zernike.DefaultMagnitudeFeature
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN features.zernike.DefaultMagnitudeFeature
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN features.zernike.DefaultMagnitudeFeature
+logging to file... plugin: features.zernike.DefaultMagnitudeFeature input: unknown output: number
+index 387
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN features.zernike.DefaultPhaseFeature
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN features.zernike.DefaultPhaseFeature
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN features.zernike.DefaultPhaseFeature
+logging to file... plugin: features.zernike.DefaultPhaseFeature input: unknown output: number
+index 388
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'Double'} PLUGIN coloc.icq.LiICQ
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'Double'} PLUGIN coloc.icq.LiICQ
+logging to file... plugin: coloc.icq.LiICQ input: unknown output: number
+index 389
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'Double'} PLUGIN coloc.kendallTau.KendallTauBRank
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'Double'} PLUGIN coloc.kendallTau.KendallTauBRank
+logging to file... plugin: coloc.kendallTau.KendallTauBRank input: unknown output: number
+index 390
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'Double'} PLUGIN coloc.maxTKendallTau.MTKT
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'Double'} PLUGIN coloc.maxTKendallTau.MTKT
+logging to file... plugin: coloc.maxTKendallTau.MTKT input: unknown output: number
+plugin:  coloc.pValue.DefaultPValue  input:  unknown  output:  NONE
+plugin:  coloc.pValue.DefaultPValue  input:  NONE  output:  Collection
+index 392
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'Double'} PLUGIN coloc.pearsons.DefaultPearsons
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'Double'} PLUGIN coloc.pearsons.DefaultPearsons
+logging to file... plugin: coloc.pearsons.DefaultPearsons input: unknown output: number
+index 410
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN convert.clip.ClipRealTypes
+logging to file... plugin: convert.clip.ClipRealTypes input: unknown output: number
+index 411
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN convert.copy.CopyRealTypes
+logging to file... plugin: convert.copy.CopyRealTypes input: unknown output: number
+plugin:  convert.imageType.ConvertIIs  input:  NONE  output:  Collection
+index 413
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN convert.normalizeScale.NormalizeScaleRealTypes
+logging to file... plugin: convert.normalizeScale.NormalizeScaleRealTypes input: unknown output: number
+index 414
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN convert.scale.ScaleRealTypes
+logging to file... plugin: convert.scale.ScaleRealTypes input: unknown output: number
+plugin:  create.imgFactory.DefaultCreateImgFactory  input:  unknown  output:  NONE
+logging to file... plugin: create.imgFactory.DefaultCreateImgFactory input: unknown output: Collection
+plugin:  create.imgLabeling.DefaultCreateImgLabeling  input:  unknown  output:  NONE
+plugin:  create.imgLabeling.DefaultCreateImgLabeling  input:  NONE  output:  Collection
+index 423
+logging to file... plugin: create.integerType.DefaultCreateIntegerType input: unknown output: number
+plugin:  create.kernel.CreateKernel2D  input:  NONE  output:  Collection
+plugin:  create.kernelDiffraction.DefaultCreateKernelGibsonLanni  input:  NONE  output:  Collection
+logging to file... plugin: create.kernelGauss.CreateKernelGaussDoubleType input: array output: Collection
+plugin:  create.kernelGauss.CreateKernelGaussSymmetric  input:  NONE  output:  Collection
+logging to file... plugin: create.kernelGauss.CreateKernelGaussSymmetricDoubleType input: number output: Collection
+plugin:  create.kernelGauss.DefaultCreateKernelGauss  input:  NONE  output:  Collection
+logging to file... plugin: create.kernelLog.CreateKernelLogDoubleType input: array output: Collection
+plugin:  create.kernelLog.CreateKernelLogSymmetric  input:  NONE  output:  Collection
+logging to file... plugin: create.kernelLog.CreateKernelLogSymmetricDoubleType input: number output: Collection
+plugin:  create.kernelLog.DefaultCreateKernelLog  input:  NONE  output:  Collection
+plugin:  create.labelingMapping.DefaultCreateLabelingMapping  input:  unknown  output:  NONE
+logging to file... plugin: create.labelingMapping.DefaultCreateLabelingMapping input: unknown output: Collection
+plugin:  create.nativeType.CreateNativeTypeFromClass  input:  unknown  output:  NONE
+plugin:  create.nativeType.CreateNativeTypeFromClass  input:  NONE  output:  Collection
+index 436
+logging to file... plugin: create.nativeType.DefaultCreateNativeType input: unknown output: number
+plugin:  create.object.CreateObjectFromClass  input:  unknown  output:  NONE
+plugin:  create.object.CreateObjectFromClass  input:  NONE  output:  Collection
+logging to file... plugin: deconvolve.accelerate.VectorAccelerator input: unknown output: Collection
+plugin:  eval.DefaultEval  input:  unknown  output:  NONE
+logging to file... plugin: eval.DefaultEval input: string output: Collection
+index 440
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultASM
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultASM
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultASM
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'MatrixOrientation'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.DefaultASM
+logging to file... plugin: features.haralick.DefaultASM input: unknown output: number
+index 441
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'double[][]'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN features.haralick.helper.CoocHXY
+logging to file... plugin: features.haralick.helper.CoocHXY input: unknown output: array
+index 442
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'double[][]'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.helper.CoocMeanX
+logging to file... plugin: features.haralick.helper.CoocMeanX input: unknown output: number
+index 443
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'double[][]'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.helper.CoocMeanY
+logging to file... plugin: features.haralick.helper.CoocMeanY input: unknown output: number
+index 444
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'double[][]'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN features.haralick.helper.CoocPX
+logging to file... plugin: features.haralick.helper.CoocPX input: unknown output: array
+index 445
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'double[][]'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN features.haralick.helper.CoocPXMinusY
+logging to file... plugin: features.haralick.helper.CoocPXMinusY input: unknown output: array
+index 446
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'double[][]'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN features.haralick.helper.CoocPXPlusY
+logging to file... plugin: features.haralick.helper.CoocPXPlusY input: unknown output: array
+index 447
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'double[][]'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN features.haralick.helper.CoocPY
+logging to file... plugin: features.haralick.helper.CoocPY input: unknown output: array
+index 448
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'double[][]'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.helper.CoocStdX
+logging to file... plugin: features.haralick.helper.CoocStdX input: unknown output: number
+index 449
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'double[][]'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN features.haralick.helper.CoocStdY
+logging to file... plugin: features.haralick.helper.CoocStdY input: unknown output: number
+plugin:  features.zernike.helper.ZernikeComputer  input:  unknown  output:  NONE
+index 452
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN filter.addNoise.AddNoiseRealType
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN filter.addNoise.AddNoiseRealType
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN filter.addNoise.AddNoiseRealType
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN filter.addNoise.AddNoiseRealType
+logging to file... plugin: filter.addNoise.AddNoiseRealType input: unknown output: number
+index 453
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN filter.addPoissonNoise.AddPoissonNoiseRealType
+logging to file... plugin: filter.addPoissonNoise.AddPoissonNoiseRealType input: unknown output: number
+plugin:  filter.convolve.ConvolveNaiveC  input:  NONE  output:  Collection
+plugin:  filter.derivative.PartialDerivativesRAI  input:  unknown  output:  NONE
+plugin:  filter.dog.DefaultDoG  input:  NONE  output:  Collection
+plugin:  filter.fft.CreateOutputFFTMethods  input:  NONE  output:  Collection
+plugin:  filter.fftSize.ComputeFFTMethodsSize  input:  unknown  output:  NONE
+logging to file... plugin: filter.fftSize.ComputeFFTMethodsSize input: boolean output: Collection
+plugin:  filter.fftSize.DefaultComputeFFTSize  input:  unknown  output:  NONE
+logging to file... plugin: filter.fftSize.DefaultComputeFFTSize input: boolean output: Collection
+plugin:  filter.hessian.HessianRAI  input:  unknown  output:  NONE
+logging to file... plugin: filter.ifft.IFFTMethodsOpI input: unknown output: Collection
+plugin:  filter.pad.DefaultPadInputFFT  input:  NONE  output:  Collection
+index 474
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE string OUTPUT {'wipp_type': 'string', 'imagej_type': 'RealLocalizable'} PLUGIN geom.DefaultCenterOfGravity
+logging to file... plugin: geom.DefaultCenterOfGravity input: unknown output: string
+plugin:  geom.geom2d.DefaultBoundingBox  input:  unknown  output:  NONE
+plugin:  geom.geom2d.DefaultBoundingBox  input:  NONE  output:  Collection
+plugin:  geom.geom2d.DefaultContour  input:  unknown  output:  NONE
+plugin:  geom.geom2d.DefaultConvexHull2D  input:  unknown  output:  NONE
+plugin:  geom.geom2d.DefaultConvexHull2D  input:  NONE  output:  Collection
+index 478
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultFeretsDiameterForAngle
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultFeretsDiameterForAngle
+logging to file... plugin: geom.geom2d.DefaultFeretsDiameterForAngle input: unknown output: number
+plugin:  geom.geom2d.DefaultMaximumFeret  input:  unknown  output:  NONE
+plugin:  geom.geom2d.DefaultMaximumFeret  input:  NONE  output:  Collection
+index 480
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultMaximumFeretAngle
+logging to file... plugin: geom.geom2d.DefaultMaximumFeretAngle input: unknown output: number
+index 481
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultMaximumFeretDiameter
+logging to file... plugin: geom.geom2d.DefaultMaximumFeretDiameter input: unknown output: number
+plugin:  geom.geom2d.DefaultMinimumFeret  input:  unknown  output:  NONE
+plugin:  geom.geom2d.DefaultMinimumFeret  input:  NONE  output:  Collection
+index 483
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultMinimumFeretAngle
+logging to file... plugin: geom.geom2d.DefaultMinimumFeretAngle input: unknown output: number
+index 484
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Polygon2D'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN geom.geom2d.DefaultMinimumFeretDiameter
+logging to file... plugin: geom.geom2d.DefaultMinimumFeretDiameter input: unknown output: number
+plugin:  geom.geom2d.DefaultMinorMajorAxis  input:  unknown  output:  NONE
+plugin:  geom.geom2d.DefaultMinorMajorAxis  input:  NONE  output:  Collection
+plugin:  geom.geom3d.DefaultInertiaTensor3D  input:  unknown  output:  NONE
+plugin:  geom.geom3d.DefaultInertiaTensor3D  input:  NONE  output:  Collection
+plugin:  geom.geom3d.DefaultInertiaTensor3DMesh  input:  unknown  output:  NONE
+plugin:  geom.geom3d.DefaultInertiaTensor3DMesh  input:  NONE  output:  Collection
+plugin:  geom.geom3d.DefaultMarchingCubes  input:  unknown  output:  NONE
+plugin:  geom.geom3d.DefaultVoxelization3D  input:  NONE  output:  Collection
+index 490
+INPUT TYPE array INPUT {'wipp_type': 'array', 'imagej_type': 'int[]'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN geom.geom3d.mesh.BitTypeVertexInterpolator
+INPUT TYPE array INPUT {'wipp_type': 'array', 'imagej_type': 'int[]'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN geom.geom3d.mesh.BitTypeVertexInterpolator
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN geom.geom3d.mesh.BitTypeVertexInterpolator
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN geom.geom3d.mesh.BitTypeVertexInterpolator
+logging to file... plugin: geom.geom3d.mesh.BitTypeVertexInterpolator input: unknown output: array
+index 491
+INPUT TYPE array INPUT {'wipp_type': 'array', 'imagej_type': 'int[]'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN geom.geom3d.mesh.DefaultVertexInterpolator
+INPUT TYPE array INPUT {'wipp_type': 'array', 'imagej_type': 'int[]'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN geom.geom3d.mesh.DefaultVertexInterpolator
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN geom.geom3d.mesh.DefaultVertexInterpolator
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN geom.geom3d.mesh.DefaultVertexInterpolator
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'double[]'} PLUGIN geom.geom3d.mesh.DefaultVertexInterpolator
+logging to file... plugin: geom.geom3d.mesh.DefaultVertexInterpolator input: unknown output: array
+index 492
+logging to file... plugin: help.HelpCandidates input: unknown output: string
+plugin:  identity.DefaultIdentity  input:  unknown  output:  NONE
+logging to file... plugin: identity.DefaultIdentity input: unknown output: Collection
+index 494
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'IterableInterval'} OUTPUT TYPE string OUTPUT {'wipp_type': 'string', 'imagej_type': 'String'} PLUGIN image.ascii.DefaultASCII
+logging to file... plugin: image.ascii.DefaultASCII input: unknown output: string
+plugin:  image.cooccurrenceMatrix.CooccurrenceMatrix2D  input:  unknown  output:  NONE
+plugin:  image.cooccurrenceMatrix.CooccurrenceMatrix2D  input:  NONE  output:  Collection
+plugin:  image.cooccurrenceMatrix.CooccurrenceMatrix3D  input:  unknown  output:  NONE
+plugin:  image.cooccurrenceMatrix.CooccurrenceMatrix3D  input:  NONE  output:  Collection
+plugin:  image.equation.DefaultCoordinatesEquation  input:  NONE  output:  Collection
+logging to file... plugin: image.equation.DefaultEquation input: string output: Collection
+plugin:  image.equation.DefaultXYEquation  input:  NONE  output:  Collection
+plugin:  image.fill.DefaultFill  input:  NONE  output:  Collection
+plugin:  image.histogram.HistogramCreate  input:  unknown  output:  NONE
+plugin:  image.watershed.Watershed  input:  unknown  output:  NONE
+plugin:  image.watershed.WatershedBinary  input:  unknown  output:  NONE
+plugin:  image.watershed.WatershedBinarySingleSigma  input:  unknown  output:  NONE
+plugin:  image.watershed.WatershedSeeded  input:  unknown  output:  NONE
+logging to file... plugin: image.watershed.WatershedSeeded input: boolean output: Collection
+plugin:  join.DefaultJoin2Computers  input:  unknown  output:  NONE
+plugin:  join.DefaultJoin2Computers  input:  NONE  output:  Collection
+plugin:  join.DefaultJoin2Inplaces  input:  unknown  output:  NONE
+plugin:  join.DefaultJoin2Inplaces  input:  NONE  output:  Collection
+plugin:  join.DefaultJoinComputerAndInplace  input:  unknown  output:  NONE
+plugin:  join.DefaultJoinComputerAndInplace  input:  NONE  output:  Collection
+plugin:  join.DefaultJoinInplaceAndComputer  input:  unknown  output:  NONE
+plugin:  join.DefaultJoinInplaceAndComputer  input:  NONE  output:  Collection
+plugin:  join.DefaultJoinNComputers  input:  unknown  output:  NONE
+plugin:  join.DefaultJoinNComputers  input:  NONE  output:  Collection
+plugin:  join.DefaultJoinNInplaces  input:  unknown  output:  NONE
+logging to file... plugin: join.DefaultJoinNInplaces input: array output: Collection
+plugin:  linalg.rotate.Rotate3d  input:  unknown  output:  NONE
+plugin:  linalg.rotate.Rotate3d  input:  NONE  output:  Collection
+plugin:  linalg.rotate.Rotate3f  input:  unknown  output:  NONE
+plugin:  linalg.rotate.Rotate3f  input:  NONE  output:  Collection
+index 521
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$And
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$And
+logging to file... plugin: logic.BooleanTypeLogic$And input: unknown output: boolean
+index 522
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Comparable'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ComparableGreaterThan
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Comparable'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ComparableGreaterThan
+logging to file... plugin: logic.BooleanTypeLogic$ComparableGreaterThan input: unknown output: boolean
+index 523
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Comparable'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ComparableGreaterThanOrEqual
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Comparable'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ComparableGreaterThanOrEqual
+logging to file... plugin: logic.BooleanTypeLogic$ComparableGreaterThanOrEqual input: unknown output: boolean
+index 524
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Comparable'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ComparableLessThan
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Comparable'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ComparableLessThan
+logging to file... plugin: logic.BooleanTypeLogic$ComparableLessThan input: unknown output: boolean
+index 525
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Comparable'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ComparableLessThanOrEqual
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Comparable'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ComparableLessThanOrEqual
+logging to file... plugin: logic.BooleanTypeLogic$ComparableLessThanOrEqual input: unknown output: boolean
+index 526
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$Not
+logging to file... plugin: logic.BooleanTypeLogic$Not input: unknown output: boolean
+index 527
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Object'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ObjectsEqual
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Object'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ObjectsEqual
+logging to file... plugin: logic.BooleanTypeLogic$ObjectsEqual input: unknown output: boolean
+index 528
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Object'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ObjectsNotEqual
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'Object'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$ObjectsNotEqual
+logging to file... plugin: logic.BooleanTypeLogic$ObjectsNotEqual input: unknown output: boolean
+index 529
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$Or
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$Or
+logging to file... plugin: logic.BooleanTypeLogic$Or input: unknown output: boolean
+index 530
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$Xor
+INPUT TYPE boolean INPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} OUTPUT TYPE boolean OUTPUT {'wipp_type': 'boolean', 'imagej_type': 'BooleanType'} PLUGIN logic.BooleanTypeLogic$Xor
+logging to file... plugin: logic.BooleanTypeLogic$Xor input: unknown output: boolean
+plugin:  logic.Default  input:  unknown  output:  NONE
+plugin:  logic.Default  input:  NONE  output:  Collection
+plugin:  lookup.LookupByName  input:  unknown  output:  NONE
+plugin:  lookup.LookupByName  input:  NONE  output:  Collection
+plugin:  lookup.LookupByType  input:  unknown  output:  NONE
+plugin:  lookup.LookupByType  input:  NONE  output:  Collection
+plugin:  loop.DefaultLoopComputer  input:  unknown  output:  NONE
+logging to file... plugin: loop.DefaultLoopComputer input: number output: Collection
+plugin:  loop.DefaultLoopInplace  input:  unknown  output:  NONE
+logging to file... plugin: loop.DefaultLoopInplace input: number output: Collection
+plugin:  map.MapViewRAIToRAI  input:  NONE  output:  Collection
+plugin:  map.MapViewRandomAccessToRandomAccess  input:  unknown  output:  NONE
+plugin:  map.MapViewRandomAccessToRandomAccess  input:  NONE  output:  Collection
+index 544
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Add
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Add
+logging to file... plugin: math.BinaryRealTypeMath$Add input: unknown output: number
+index 545
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$And
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$And
+logging to file... plugin: math.BinaryRealTypeMath$And input: unknown output: number
+index 546
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Divide
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Divide
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Divide
+logging to file... plugin: math.BinaryRealTypeMath$Divide input: unknown output: number
+index 547
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Multiply
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Multiply
+logging to file... plugin: math.BinaryRealTypeMath$Multiply input: unknown output: number
+index 548
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Or
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Or
+logging to file... plugin: math.BinaryRealTypeMath$Or input: unknown output: number
+index 549
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Subtract
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Subtract
+logging to file... plugin: math.BinaryRealTypeMath$Subtract input: unknown output: number
+index 550
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Xor
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.BinaryRealTypeMath$Xor
+logging to file... plugin: math.BinaryRealTypeMath$Xor input: unknown output: number
+logging to file... plugin: math.ConstantToPlanarImage$AddByte input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$AddDouble input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$AddFloat input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$AddInt input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$AddLong input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$AddShort input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$AddUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$AddUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$AddUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$AddUnsignedShort input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$DivideByte input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$DivideDouble input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$DivideFloat input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$DivideInt input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$DivideLong input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$DivideShort input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$DivideUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$DivideUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$DivideUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$DivideUnsignedShort input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$MultiplyByte input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$MultiplyDouble input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$MultiplyFloat input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$MultiplyInt input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$MultiplyLong input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$MultiplyShort input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$MultiplyUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$MultiplyUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$MultiplyUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$MultiplyUnsignedShort input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$SubtractByte input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$SubtractDouble input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$SubtractFloat input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$SubtractInt input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$SubtractLong input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$SubtractShort input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$SubtractUnsignedByte input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$SubtractUnsignedInt input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$SubtractUnsignedLong input: number output: Collection
+logging to file... plugin: math.ConstantToPlanarImage$SubtractUnsignedShort input: number output: Collection
+plugin:  math.NullaryNumericTypeMath$Assign  input:  unknown  output:  NONE
+plugin:  math.NullaryNumericTypeMath$Assign  input:  NONE  output:  Collection
+index 600
+logging to file... plugin: math.NullaryNumericTypeMath$Zero input: unknown output: number
+index 601
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Abs
+logging to file... plugin: math.UnaryRealTypeMath$Abs input: unknown output: number
+index 602
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arccos
+logging to file... plugin: math.UnaryRealTypeMath$Arccos input: unknown output: number
+index 603
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arccosh
+logging to file... plugin: math.UnaryRealTypeMath$Arccosh input: unknown output: number
+index 604
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arccot
+logging to file... plugin: math.UnaryRealTypeMath$Arccot input: unknown output: number
+index 605
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arccoth
+logging to file... plugin: math.UnaryRealTypeMath$Arccoth input: unknown output: number
+index 606
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arccsc
+logging to file... plugin: math.UnaryRealTypeMath$Arccsc input: unknown output: number
+index 607
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arccsch
+logging to file... plugin: math.UnaryRealTypeMath$Arccsch input: unknown output: number
+index 608
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arcsec
+logging to file... plugin: math.UnaryRealTypeMath$Arcsec input: unknown output: number
+index 609
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arcsech
+logging to file... plugin: math.UnaryRealTypeMath$Arcsech input: unknown output: number
+index 610
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arcsin
+logging to file... plugin: math.UnaryRealTypeMath$Arcsin input: unknown output: number
+index 611
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arcsinh
+logging to file... plugin: math.UnaryRealTypeMath$Arcsinh input: unknown output: number
+index 612
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arctan
+logging to file... plugin: math.UnaryRealTypeMath$Arctan input: unknown output: number
+index 613
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Arctanh
+logging to file... plugin: math.UnaryRealTypeMath$Arctanh input: unknown output: number
+index 614
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Ceil
+logging to file... plugin: math.UnaryRealTypeMath$Ceil input: unknown output: number
+index 615
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Cos
+logging to file... plugin: math.UnaryRealTypeMath$Cos input: unknown output: number
+index 616
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Cosh
+logging to file... plugin: math.UnaryRealTypeMath$Cosh input: unknown output: number
+index 617
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Cot
+logging to file... plugin: math.UnaryRealTypeMath$Cot input: unknown output: number
+index 618
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Coth
+logging to file... plugin: math.UnaryRealTypeMath$Coth input: unknown output: number
+index 619
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Csc
+logging to file... plugin: math.UnaryRealTypeMath$Csc input: unknown output: number
+index 620
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Csch
+logging to file... plugin: math.UnaryRealTypeMath$Csch input: unknown output: number
+index 621
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$CubeRoot
+logging to file... plugin: math.UnaryRealTypeMath$CubeRoot input: unknown output: number
+index 622
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Exp
+logging to file... plugin: math.UnaryRealTypeMath$Exp input: unknown output: number
+index 623
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$ExpMinusOne
+logging to file... plugin: math.UnaryRealTypeMath$ExpMinusOne input: unknown output: number
+index 624
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Floor
+logging to file... plugin: math.UnaryRealTypeMath$Floor input: unknown output: number
+index 625
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$GammaConstant
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$GammaConstant
+logging to file... plugin: math.UnaryRealTypeMath$GammaConstant input: unknown output: number
+index 626
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Invert
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Invert
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Invert
+logging to file... plugin: math.UnaryRealTypeMath$Invert input: unknown output: number
+index 627
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Log
+logging to file... plugin: math.UnaryRealTypeMath$Log input: unknown output: number
+index 628
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Log10
+logging to file... plugin: math.UnaryRealTypeMath$Log10 input: unknown output: number
+index 629
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Log2
+logging to file... plugin: math.UnaryRealTypeMath$Log2 input: unknown output: number
+index 630
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$LogOnePlusX
+logging to file... plugin: math.UnaryRealTypeMath$LogOnePlusX input: unknown output: number
+index 631
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$MaxConstant
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$MaxConstant
+logging to file... plugin: math.UnaryRealTypeMath$MaxConstant input: unknown output: number
+index 632
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$MinConstant
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$MinConstant
+logging to file... plugin: math.UnaryRealTypeMath$MinConstant input: unknown output: number
+index 633
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$NearestInt
+logging to file... plugin: math.UnaryRealTypeMath$NearestInt input: unknown output: number
+index 634
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Negate
+logging to file... plugin: math.UnaryRealTypeMath$Negate input: unknown output: number
+index 635
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$PowerConstant
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$PowerConstant
+logging to file... plugin: math.UnaryRealTypeMath$PowerConstant input: unknown output: number
+index 636
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$RandomGaussian
+logging to file... plugin: math.UnaryRealTypeMath$RandomGaussian input: unknown output: number
+index 637
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$RandomUniform
+logging to file... plugin: math.UnaryRealTypeMath$RandomUniform input: unknown output: number
+index 638
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Reciprocal
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Reciprocal
+logging to file... plugin: math.UnaryRealTypeMath$Reciprocal input: unknown output: number
+index 639
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Round
+logging to file... plugin: math.UnaryRealTypeMath$Round input: unknown output: number
+index 640
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Sec
+logging to file... plugin: math.UnaryRealTypeMath$Sec input: unknown output: number
+index 641
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Sech
+logging to file... plugin: math.UnaryRealTypeMath$Sech input: unknown output: number
+index 642
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Signum
+logging to file... plugin: math.UnaryRealTypeMath$Signum input: unknown output: number
+index 643
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Sin
+logging to file... plugin: math.UnaryRealTypeMath$Sin input: unknown output: number
+index 644
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Sinc
+logging to file... plugin: math.UnaryRealTypeMath$Sinc input: unknown output: number
+index 645
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$SincPi
+logging to file... plugin: math.UnaryRealTypeMath$SincPi input: unknown output: number
+index 646
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Sinh
+logging to file... plugin: math.UnaryRealTypeMath$Sinh input: unknown output: number
+index 647
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Sqr
+logging to file... plugin: math.UnaryRealTypeMath$Sqr input: unknown output: number
+index 648
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Sqrt
+logging to file... plugin: math.UnaryRealTypeMath$Sqrt input: unknown output: number
+index 649
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Step
+logging to file... plugin: math.UnaryRealTypeMath$Step input: unknown output: number
+index 650
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Tan
+logging to file... plugin: math.UnaryRealTypeMath$Tan input: unknown output: number
+index 651
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Tanh
+logging to file... plugin: math.UnaryRealTypeMath$Tanh input: unknown output: number
+index 652
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN math.UnaryRealTypeMath$Ulp
+logging to file... plugin: math.UnaryRealTypeMath$Ulp input: unknown output: number
+plugin:  morphology.dilate.DefaultDilate  input:  NONE  output:  Collection
+plugin:  morphology.erode.DefaultErode  input:  NONE  output:  Collection
+plugin:  morphology.floodFill.DefaultFloodFill  input:  NONE  output:  Collection
+plugin:  run.RunByName  input:  unknown  output:  NONE
+plugin:  run.RunByName  input:  NONE  output:  Collection
+plugin:  run.RunByOp  input:  unknown  output:  NONE
+plugin:  run.RunByOp  input:  NONE  output:  Collection
+plugin:  run.RunByType  input:  unknown  output:  NONE
+plugin:  run.RunByType  input:  NONE  output:  Collection
+index 671
+INPUT TYPE array INPUT {'wipp_type': 'array', 'imagej_type': 'List'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'List'} PLUGIN segment.detectJunctions.DefaultDetectJunctions
+logging to file... plugin: segment.detectJunctions.DefaultDetectJunctions input: unknown output: array
+index 672
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'List'} PLUGIN segment.detectRidges.DefaultDetectRidges
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'List'} PLUGIN segment.detectRidges.DefaultDetectRidges
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'List'} PLUGIN segment.detectRidges.DefaultDetectRidges
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'double'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'List'} PLUGIN segment.detectRidges.DefaultDetectRidges
+INPUT TYPE number INPUT {'wipp_type': 'number', 'imagej_type': 'int'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'List'} PLUGIN segment.detectRidges.DefaultDetectRidges
+logging to file... plugin: segment.detectRidges.DefaultDetectRidges input: unknown output: array
+index 673
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'RectangleNeighborhood'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN stats.IntegralMean
+logging to file... plugin: stats.IntegralMean input: unknown output: number
+index 674
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'RectangleNeighborhood'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN stats.IntegralSum
+logging to file... plugin: stats.IntegralSum input: unknown output: number
+index 675
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'RectangleNeighborhood'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN stats.IntegralVariance
+logging to file... plugin: stats.IntegralVariance input: unknown output: number
+plugin:  stats.regression.leastSquares.Quadric  input:  unknown  output:  NONE
+plugin:  stats.regression.leastSquares.Quadric  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalHuangThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalIJ1Threshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalIntermodesThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalIsoDataThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalLiThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalMaxEntropyThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalMaxLikelihoodThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalMinErrorThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalMinimumThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalMomentsThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalOtsuThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalPercentileThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalRenyiEntropyThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalRosinThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalShanbhagThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalTriangleThreshold  input:  NONE  output:  Collection
+plugin:  threshold.ApplyThresholdMethodLocal$LocalYenThreshold  input:  NONE  output:  Collection
+plugin:  threshold.apply.ApplyThresholdComparable  input:  unknown  output:  NONE
+plugin:  threshold.apply.ApplyThresholdComparable  input:  NONE  output:  Collection
+plugin:  threshold.apply.ApplyThresholdComparator  input:  unknown  output:  NONE
+plugin:  threshold.apply.ApplyThresholdComparator  input:  NONE  output:  Collection
+logging to file... plugin: threshold.localBernsen.LocalBernsenThreshold input: number output: Collection
+plugin:  threshold.localContrast.LocalContrastThreshold  input:  NONE  output:  Collection
+logging to file... plugin: threshold.localMedian.LocalMedianThreshold input: number output: Collection
+logging to file... plugin: threshold.localMidGrey.LocalMidGreyThreshold input: number output: Collection
+index 719
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE array OUTPUT {'wipp_type': 'array', 'imagej_type': 'List'} PLUGIN topology.BoxCount
+logging to file... plugin: topology.BoxCount input: unknown output: array
+index 720
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN topology.eulerCharacteristic.EulerCharacteristic26N
+logging to file... plugin: topology.eulerCharacteristic.EulerCharacteristic26N input: unknown output: number
+index 721
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN topology.eulerCharacteristic.EulerCharacteristic26NFloating
+logging to file... plugin: topology.eulerCharacteristic.EulerCharacteristic26NFloating input: unknown output: number
+index 722
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'RandomAccessibleInterval'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN topology.eulerCharacteristic.EulerCorrection
+logging to file... plugin: topology.eulerCharacteristic.EulerCorrection input: unknown output: number
+plugin:  transform.collapseNumericView.DefaultCollapseNumeric2CompositeIntervalView  input:  unknown  output:  NONE
+plugin:  transform.collapseNumericView.DefaultCollapseNumeric2CompositeView  input:  unknown  output:  NONE
+logging to file... plugin: transform.collapseNumericView.DefaultCollapseNumeric2CompositeView input: number output: Collection
+plugin:  transform.collapseRealView.DefaultCollapseReal2CompositeIntervalView  input:  unknown  output:  NONE
+plugin:  transform.collapseRealView.DefaultCollapseReal2CompositeView  input:  unknown  output:  NONE
+logging to file... plugin: transform.collapseRealView.DefaultCollapseReal2CompositeView input: number output: Collection
+plugin:  transform.collapseView.DefaultCollapse2CompositeIntervalView  input:  unknown  output:  NONE
+plugin:  transform.collapseView.DefaultCollapse2CompositeView  input:  unknown  output:  NONE
+plugin:  transform.collapseView.DefaultCollapse2CompositeView  input:  NONE  output:  Collection
+plugin:  transform.concatenateView.ConcatenateViewWithAccessMode  input:  NONE  output:  Collection
+logging to file... plugin: transform.concatenateView.DefaultConcatenateView input: number output: Collection
+plugin:  transform.extendBorderView.DefaultExtendBorderView  input:  unknown  output:  NONE
+plugin:  transform.extendMirrorDoubleView.DefaultExtendMirrorDoubleView  input:  unknown  output:  NONE
+plugin:  transform.extendMirrorSingleView.DefaultExtendMirrorSingleView  input:  unknown  output:  NONE
+plugin:  transform.extendPeriodicView.DefaultExtendPeriodicView  input:  unknown  output:  NONE
+plugin:  transform.extendRandomView.DefaultExtendRandomView  input:  unknown  output:  NONE
+plugin:  transform.extendValueView.DefaultExtendValueView  input:  unknown  output:  NONE
+plugin:  transform.extendValueView.DefaultExtendValueView  input:  NONE  output:  Collection
+plugin:  transform.extendView.DefaultExtendView  input:  unknown  output:  NONE
+plugin:  transform.extendView.DefaultExtendView  input:  NONE  output:  Collection
+plugin:  transform.extendZeroView.DefaultExtendZeroView  input:  unknown  output:  NONE
+plugin:  transform.hyperSliceView.DefaultHyperSliceView  input:  unknown  output:  NONE
+logging to file... plugin: transform.hyperSliceView.DefaultHyperSliceView input: number output: Collection
+plugin:  transform.interpolateView.DefaultInterpolateView  input:  unknown  output:  NONE
+plugin:  transform.interpolateView.DefaultInterpolateView  input:  NONE  output:  Collection
+plugin:  transform.intervalView.DefaultIntervalView  input:  unknown  output:  NONE
+plugin:  transform.intervalView.DefaultIntervalView  input:  NONE  output:  Collection
+plugin:  transform.intervalView.IntervalViewMinMax  input:  unknown  output:  NONE
+logging to file... plugin: transform.intervalView.IntervalViewMinMax input: array output: Collection
+plugin:  transform.invertAxisView.DefaultInvertAxisView  input:  unknown  output:  NONE
+logging to file... plugin: transform.invertAxisView.DefaultInvertAxisView input: number output: Collection
+plugin:  transform.offsetView.DefaultOffsetView  input:  unknown  output:  NONE
+logging to file... plugin: transform.offsetView.DefaultOffsetView input: array output: Collection
+plugin:  transform.offsetView.OffsetViewInterval  input:  unknown  output:  NONE
+plugin:  transform.offsetView.OffsetViewInterval  input:  NONE  output:  Collection
+plugin:  transform.offsetView.OffsetViewOriginSize  input:  unknown  output:  NONE
+logging to file... plugin: transform.offsetView.OffsetViewOriginSize input: array output: Collection
+plugin:  transform.permuteCoordinatesInverseView.DefaultPermuteCoordinatesInverseView  input:  unknown  output:  NONE
+plugin:  transform.permuteCoordinatesInverseView.PermuteCoordinateInverseViewOfDimension  input:  unknown  output:  NONE
+plugin:  transform.permuteCoordinatesView.DefaultPermuteCoordinatesView  input:  unknown  output:  NONE
+plugin:  transform.permuteCoordinatesView.PermuteCoordinatesViewOfDimension  input:  unknown  output:  NONE
+plugin:  transform.permuteView.DefaultPermuteView  input:  unknown  output:  NONE
+logging to file... plugin: transform.permuteView.DefaultPermuteView input: number output: Collection
+plugin:  transform.rasterView.DefaultRasterView  input:  unknown  output:  NONE
+plugin:  transform.rasterView.DefaultRasterView  input:  NONE  output:  Collection
+plugin:  transform.rotateView.DefaultRotateView  input:  unknown  output:  NONE
+logging to file... plugin: transform.rotateView.DefaultRotateView input: number output: Collection
+plugin:  transform.shearView.DefaultShearView  input:  unknown  output:  NONE
+logging to file... plugin: transform.shearView.DefaultShearView input: number output: Collection
+plugin:  transform.shearView.ShearViewInterval  input:  unknown  output:  NONE
+logging to file... plugin: transform.shearView.ShearViewInterval input: number output: Collection
+logging to file... plugin: transform.stackView.DefaultStackView input: array output: Collection
+plugin:  transform.stackView.StackViewWithAccessMode  input:  NONE  output:  Collection
+plugin:  transform.subsampleView.DefaultSubsampleView  input:  unknown  output:  NONE
+logging to file... plugin: transform.subsampleView.DefaultSubsampleView input: number output: Collection
+plugin:  transform.subsampleView.SubsampleViewStepsForDims  input:  unknown  output:  NONE
+logging to file... plugin: transform.subsampleView.SubsampleViewStepsForDims input: array output: Collection
+plugin:  transform.translateView.DefaultTranslateView  input:  unknown  output:  NONE
+logging to file... plugin: transform.translateView.DefaultTranslateView input: array output: Collection
+plugin:  transform.unshearView.DefaultUnshearView  input:  unknown  output:  NONE
+logging to file... plugin: transform.unshearView.DefaultUnshearView input: number output: Collection
+plugin:  transform.unshearView.UnshearViewInterval  input:  unknown  output:  NONE
+logging to file... plugin: transform.unshearView.UnshearViewInterval input: number output: Collection
+plugin:  transform.zeroMinView.DefaultZeroMinView  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$ComplexToBit  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$ComplexToBit  input:  NONE  output:  Collection
+plugin:  convert.ConvertTypes$ComplexToCfloat32  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$ComplexToCfloat32  input:  NONE  output:  Collection
+plugin:  convert.ConvertTypes$ComplexToCfloat64  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$ComplexToCfloat64  input:  NONE  output:  Collection
+index 769
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'ComplexType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'FloatType'} PLUGIN convert.ConvertTypes$ComplexToFloat32
+logging to file... plugin: convert.ConvertTypes$ComplexToFloat32 input: unknown output: number
+index 770
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'ComplexType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'DoubleType'} PLUGIN convert.ConvertTypes$ComplexToFloat64
+logging to file... plugin: convert.ConvertTypes$ComplexToFloat64 input: unknown output: number
+index 771
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'ComplexType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'ShortType'} PLUGIN convert.ConvertTypes$ComplexToInt16
+logging to file... plugin: convert.ConvertTypes$ComplexToInt16 input: unknown output: number
+plugin:  convert.ConvertTypes$ComplexToInt32  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$ComplexToInt32  input:  NONE  output:  Collection
+index 773
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'ComplexType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'LongType'} PLUGIN convert.ConvertTypes$ComplexToInt64
+logging to file... plugin: convert.ConvertTypes$ComplexToInt64 input: unknown output: number
+index 774
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'ComplexType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'ByteType'} PLUGIN convert.ConvertTypes$ComplexToInt8
+logging to file... plugin: convert.ConvertTypes$ComplexToInt8 input: unknown output: number
+plugin:  convert.ConvertTypes$ComplexToUint12  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$ComplexToUint12  input:  NONE  output:  Collection
+plugin:  convert.ConvertTypes$ComplexToUint128  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$ComplexToUint128  input:  NONE  output:  Collection
+index 777
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'ComplexType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'UnsignedShortType'} PLUGIN convert.ConvertTypes$ComplexToUint16
+logging to file... plugin: convert.ConvertTypes$ComplexToUint16 input: unknown output: number
+plugin:  convert.ConvertTypes$ComplexToUint2  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$ComplexToUint2  input:  NONE  output:  Collection
+plugin:  convert.ConvertTypes$ComplexToUint32  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$ComplexToUint32  input:  NONE  output:  Collection
+plugin:  convert.ConvertTypes$ComplexToUint4  input:  unknown  output:  NONE
+plugin:  convert.ConvertTypes$ComplexToUint4  input:  NONE  output:  Collection
+index 781
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'ComplexType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'UnsignedLongType'} PLUGIN convert.ConvertTypes$ComplexToUint64
+logging to file... plugin: convert.ConvertTypes$ComplexToUint64 input: unknown output: number
+index 782
+INPUT TYPE None INPUT {'wipp_type': None, 'imagej_type': 'ComplexType'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'UnsignedByteType'} PLUGIN convert.ConvertTypes$ComplexToUint8
+logging to file... plugin: convert.ConvertTypes$ComplexToUint8 input: unknown output: number
+plugin:  create.kernelBiGauss.DefaultCreateKernel2ndDerivBiGauss  input:  NONE  output:  Collection
+logging to file... plugin: create.kernelBiGauss.CreateKernel2ndDerivBiGaussDoubleType input: number output: Collection
+logging to file... plugin: create.kernelBiGauss.CreateKernelBiGaussDoubleType input: number output: Collection
+plugin:  create.kernelBiGauss.DefaultCreateKernelBiGauss  input:  NONE  output:  Collection
+plugin:  create.kernelGabor.DefaultCreateKernelGabor  input:  NONE  output:  Collection
+plugin:  create.kernelGabor.CreateKernelGaborIsotropic  input:  NONE  output:  Collection
+logging to file... plugin: create.kernelGabor.CreateKernelGaborIsotropicComplexDoubleType input: array output: Collection
+logging to file... plugin: create.kernelGabor.CreateKernelGaborComplexDoubleType input: array output: Collection
+logging to file... plugin: create.kernelGabor.CreateKernelGaborDoubleType input: array output: Collection
+logging to file... plugin: create.kernelGabor.CreateKernelGaborIsotropicDoubleType input: array output: Collection
+plugin:  create.kernelSobel.CreateKernelSobel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$IIAndIIToIIParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$IIAndIIToRAIParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$IIAndRAIToIIParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$IIAndRAIToRAIParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$RAIAndIIToIIParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryInplace1s$IIAndIIParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$RAIAndIIToRAIParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryInplace1s$IIAndRAIParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$RAIAndRAIToIIParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryInplace1s$RAIAndIIParallel  input:  NONE  output:  Collection
+plugin:  map.MapIIAndIIInplaceParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$IIAndIIToII  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$IIAndIIToRAI  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$IIAndRAIToII  input:  NONE  output:  Collection
+plugin:  map.MapIIInplaceParallel  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$IIAndRAIToRAI  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$RAIAndIIToII  input:  NONE  output:  Collection
+plugin:  map.MapBinaryInplace1s$IIAndII  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$RAIAndIIToRAI  input:  NONE  output:  Collection
+plugin:  map.MapBinaryInplace1s$IIAndRAI  input:  NONE  output:  Collection
+plugin:  map.MapBinaryComputers$RAIAndRAIToII  input:  NONE  output:  Collection
+plugin:  map.MapBinaryInplace1s$RAIAndII  input:  NONE  output:  Collection
+plugin:  map.MapNullaryII  input:  NONE  output:  Collection
+plugin:  map.neighborhood.MapNeighborhoodWithCenter  input:  NONE  output:  Collection
+logging to file... plugin: transform.project.DefaultProjectParallel input: number output: Collection
+index 822
+INPUT TYPE collection INPUT {'wipp_type': 'collection', 'imagej_type': 'Iterable'} OUTPUT TYPE number OUTPUT {'wipp_type': 'number', 'imagej_type': 'RealType'} PLUGIN stats.DefaultMean
+logging to file... plugin: stats.DefaultMean input: unknown output: number
+plugin:  deconvolve.NonCirculantFirstGuess  input:  NONE  output:  Collection
+plugin:  deconvolve.NonCirculantNormalizationFactor  input:  NONE  output:  Collection
+plugin:  filter.FFTMethodsLinearFFTFilterC  input:  NONE  output:  Collection
+plugin:  filter.max.DefaultMaxFilter  input:  NONE  output:  Collection
+plugin:  filter.mean.DefaultMeanFilter  input:  NONE  output:  Collection
+plugin:  filter.median.DefaultMedianFilter  input:  NONE  output:  Collection
+plugin:  filter.min.DefaultMinFilter  input:  NONE  output:  Collection
+logging to file... plugin: filter.sigma.DefaultSigmaFilter input: number output: Collection
+plugin:  filter.variance.DefaultVarianceFilter  input:  NONE  output:  Collection
+plugin:  map.MapIIAndIIInplace  input:  NONE  output:  Collection
+plugin:  map.MapIterableInplace  input:  NONE  output:  Collection
+plugin:  map.MapNullaryIterable  input:  NONE  output:  Collection
+plugin:  map.neighborhood.DefaultMapNeighborhood  input:  NONE  output:  Collection
+plugin:  math.multiply.ComplexConjugateMultiplyOp  input:  unknown  output:  NONE
+plugin:  math.multiply.ComplexConjugateMultiplyOp  input:  NONE  output:  Collection
+logging to file... plugin: threshold.localMean.LocalMeanThreshold input: number output: Collection
+logging to file... plugin: threshold.localNiblack.LocalNiblackThreshold input: number output: Collection
+plugin:  threshold.localPhansalkar.LocalPhansalkarThreshold  input:  NONE  output:  Collection
+plugin:  threshold.localSauvola.LocalSauvolaThreshold  input:  NONE  output:  Collection
+logging to file... plugin: transform.project.ProjectRAIToII input: number output: Collection
+logging to file... plugin: transform.project.ProjectRAIToIterableInterval input: number output: Collection
+plugin:  map.MapIterableToIterable  input:  NONE  output:  Collection
+logging to file... plugin: threshold.localMean.LocalMeanThresholdIntegral input: number output: Collection
+logging to file... plugin: threshold.localNiblack.LocalNiblackThresholdIntegral input: number output: Collection
+plugin:  threshold.localPhansalkar.LocalPhansalkarThresholdIntegral  input:  NONE  output:  Collection
+plugin:  threshold.localSauvola.LocalSauvolaThresholdIntegral  input:  NONE  output:  Collection

@@ -36,7 +36,12 @@
     {
       "key": "inputs.{{ inp }}",
       "title": "{{ val.title }}",
-      "description": "{{ val.description }}"
+      "description": "{{ val.description }}",
+      {% if val.type=='enum' %}
+      {
+        "condition": cookiecutter._inputs.{{ inp }}==[{% for v in val.options %}"{{v}}"{% if not loop.last %},
+          {% endif %}{% endfor %}]
+      }
     }{% if not loop.last %},{% endif %}{% endfor %}
   ]
 }

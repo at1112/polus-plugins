@@ -1,3 +1,10 @@
+'''
+
+This file creates the main.py corresponding to each plugin json manifest generated with populate.py and generate.py
+using jinja and an imported conversion utility ij_converter.py. Note change from jnius to jpype for handling conversions in ij_converter.py
+
+'''
+
 from bfio.bfio import BioReader, BioWriter
 import argparse, logging, sys
 import numpy as np
@@ -32,16 +39,17 @@ if __name__=="__main__":
     logger.info("Parsing arguments...")
     parser = argparse.ArgumentParser(prog='main', description='{{ cookiecutter.project_short_description }}')
     
-    # Input arguments
+    # Add command-line argument for each of the input arguments
     {% for inp,val in cookiecutter._inputs.items() -%}
     parser.add_argument('--{{ inp }}', dest='{{ inp }}', type=str,
                         help='{{ val.description }}', required={{ val.required }})
     {% endfor %}
-    # Output arguments
+    # Add command-line argument for each of the input arguments
     {%- for out,val in cookiecutter._outputs.items() %}
     parser.add_argument('--{{ out }}', dest='{{ out }}', type=str,
                         help='{{ val.description }}', required=True)
     {% endfor %}
+
     """ Parse the arguments """
     args = parser.parse_args()
     
@@ -56,6 +64,7 @@ if __name__=="__main__":
     {% endif -%}
     logger.info('{{ inp }} = {}'.format(_{{ inp }}))
     {% endfor %}
+
     # Output Args
     {%- for out,val in cookiecutter._outputs.items() %}
     _{{ out }} = Path(args.{{ out }})
@@ -66,19 +75,24 @@ if __name__=="__main__":
     args = []
     arg_types = []
     arg_len = 0
+
+    #For each input,
     {% for inp,val in cookiecutter._inputs.items() %}
+
     # Validate {{ inp }}{% if inp != "opName" %}
     {{ inp }}_types = { {% for i,v in val.call_types.items() %}
         "{{ i }}": "{{ v }}",{% endfor %}
     }
-      
+    
+    # Check that all inputs are specified 
     if _{{ inp }} == None and _opName in list({{ inp }}_types.keys()):
         raise ValueError('{} must be defined to run {}.'.format('{{ inp }}',_opName))
-    {%- if val.type == "collection" %}
+    {%- if val.type == "collection"%}
     elif _{{ inp }} != None:
         {{ inp }}_type = {{ inp }}_types[_opName]
     
         if _{{ inp }}.joinpath('images').is_dir():
+
             # switch to images folder if present
             _{{ inp }} = _{{ inp }}.joinpath('images').absolute()
 
@@ -101,25 +115,34 @@ if __name__=="__main__":
         if len(args[i]) == 1:
             args[i] = args[i] * arg_len
             
-    """ Setup the output """
+    """ Set up the output """
     {% for out,val in cookiecutter._outputs.items() %}
     {{ out }}_types = { {% for i,v in val.call_types.items() %}
         "{{ i }}": "{{ v }}",{% endfor %}
     }
     {%- endfor %}
+
+
     """ Run the plugin """
     try:
         for ind, (
+
+            ##for each input
             {%- for inp,val in cookiecutter._inputs.items() -%}
+
+            ##if it's a collection type, add 
             {%- if val.type=='collection' %}{{ inp }}_path,{% endif -%}
             {%- endfor %}) in enumerate(zip(*args)):
             
             {%- for inp,val in cookiecutter._inputs.items() if val.type=='collection' %}
             {%- if val.type=='collection' %}
             if {{ inp }}_path != None:
+
                 # Load the first plane of image in {{ inp }} collection
                 logger.info('Processing image: {}'.format({{ inp }}_path))
                 {{ inp }}_br = BioReader({{ inp }}_path)
+                
+                ##use converter utility to get a java-recognizable numpy array from input image collection 
                 {{ inp }} = ij_converter.to_java(np.squeeze({{ inp }}_br[:,:,0:1,0,0]),{{ inp }}_type)
                 {%- if loop.first %}
                 metadata = {{ inp }}_br.metadata
@@ -127,6 +150,8 @@ if __name__=="__main__":
                 dtype = ij.py.dtype({{ inp }})
             {%- endif %}
             {%- endif %}{% endfor %}
+
+            ##pertains to all inputs that aren't a collection or name of the op
             {% for inp,val in cookiecutter._inputs.items() if val.type!='collection' and inp!='opName' %}
             if _{{ inp }} != None:
                 {{ inp }} = ij_converter.to_java(_{{ inp }},{{ inp }}_types[_opName],dtype)
@@ -145,6 +170,7 @@ if __name__=="__main__":
             {%- endif %}{% endfor %}
             
             {% for out,val in cookiecutter._outputs.items() -%}
+
             # Save {{ out }}
             logger.info('Saving...')
             {{ out }}_array = ij_converter.from_java({{ out }},{{ out }}_types[_opName])
