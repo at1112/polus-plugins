@@ -21,15 +21,12 @@ import os
 import sys
 
 
-old_stdout = sys.stdout
-
 log_file = open("excluded_log.log","w")
 
 sys.stdout = log_file
 
-print("this will be written to message.log")
+print("These are the plugins and associated ImageJ AND WIPP types excluded from analysis. These will be written to excluded_log.log")
 
-#sys.stdout = old_stdout
 
 
 """ Parse ImageJ Op Metadata """
@@ -245,7 +242,6 @@ for index, path in enumerate(keys):
     plugin_full_name = '.'.join(path)
 
     ##if a plugin doesn't have inputs and outputs as collection types --> log
-
     if 'collection' not in [o['wipp_type'] for o in outputs.values()] or \
             None in [o['wipp_type'] for o in outputs.values()]:
             for o in outputs.values():
@@ -258,11 +254,51 @@ for index, path in enumerate(keys):
                         print("index", index)
                         inputs_temp = {i.split(' ')[1]:
                             {'wipp_type': IMAGEJ_WIPP_TYPE.get(i.split(' ')[0]),'imagej_type': i.split(' ')[0]} for i in Inputs[index] if not i.endswith('?') and len(i.split(' ')[0])>0}
+
                         for i in inputs_temp.values():
 
                             ##I printed to stdout --> you can change this to print to a specific file or just system
                             print("INPUT TYPE", i['wipp_type'], "INPUT", i, "OUTPUT TYPE", o['wipp_type'], "OUTPUT", o, "PLUGIN", plugin_full_name)
-                            logging.info('So should this')
+
+
+print('functions that cannot be handled have been printed')
+
+
+##Second Log File
+
+log_file2 = open("other.log","w")
+
+sys.stdout = log_file2
+
+print('This file reports plugins that this framework cannot handle, but not their INPUTS and OUTPUTS (only WIPP TYPES) - those plugins which DO NOT satisfy the criteria of taking a collection as both input and output')
+
+for index, path in enumerate(keys):
+    
+    #class_name is the last entry in this list
+    class_name = path[-1]
+    
+    #plugin_name combined with class_name
+    plugin_name = '.'.join(path[:-1])
+    
+    
+    ##skip over the plugin names we put in the list skip_classes
+    if plugin_name in skip_classes:
+        continue
+    input_type = "unknown"
+    output_type = "unknown"
+    outputs = {o.split(' ')[1].rstrip('?'):
+                {'wipp_type': IMAGEJ_WIPP_TYPE.get(o.split(' ')[0]),
+                 'imagej_type': o.split(' ')[0]} for o in Outputs[index]}
+    plugin_full_name = '.'.join(path)
+
+    ##if a plugin doesn't have inputs and outputs as collection types --> log
+    if 'collection' not in [o['wipp_type'] for o in outputs.values()] or \
+            None in [o['wipp_type'] for o in outputs.values()]:
+            for o in outputs.values():
+                if(o['wipp_type'] is None):
+                    output_type = None
+                    continue
+                           
 
             if(output_type is None):
                 s = "plugin: "+plugin_full_name +" input: "+input_type+" output: "+ "NONE" + "\n"
@@ -270,12 +306,13 @@ for index, path in enumerate(keys):
                 ##can change log file name
                 #excluded_log.write(s)
                 print("plugin: ",plugin_full_name," input: ",input_type," output: ","NONE")
-                
+               
             else:
                 print("logging to file... plugin:",plugin_full_name,"input:", input_type,"output:", output_type)
 
                 continue
-
+           
+    
     output_type = "Collection"
 
     inputs = {i.split(' ')[1]:
@@ -290,6 +327,28 @@ for index, path in enumerate(keys):
                 continue
             if 'collection' not in i['wipp_type']:
                 input_type = i['wipp_type']
+        if(input_type is None):
+            s = "plugin: "+plugin_full_name +" input: "+"NONE"+" output: "+output_type + "\n"
+            #excluded_log.write(s)
+            
+            print("plugin: ",plugin_full_name," input: ","NONE"," output: ",output_type)
+
+    
+    output_type = "Collection"
+
+    inputs = {i.split(' ')[1]:
+                {'wipp_type': IMAGEJ_WIPP_TYPE.get(i.split(' ')[0]),
+                 'imagej_type': i.split(' ')[0]} for i in Inputs[index] if not i.endswith('?')}
+    
+    if 'collection' not in [i['wipp_type'] for i in inputs.values()] or \
+        None in [i['wipp_type'] for i in inputs.values()]:
+        for i in inputs.values():
+            if(i['wipp_type'] is None):
+                input_type = None
+                continue
+            if 'collection' not in i['wipp_type']:
+                input_type = i['wipp_type']
+                
         if(input_type is None):
             s = "plugin: "+plugin_full_name +" input: "+"NONE"+" output: "+output_type + "\n"
             #excluded_log.write(s)
@@ -315,8 +374,7 @@ for index, path in enumerate(keys):
                 '_outputs': outputs
             }
         }
-
-    
+  
 """ Build the cookiecutter dictionaries for each plugin
 
 This section of code uses all the above information to build a dictionary that
@@ -413,6 +471,6 @@ for plugin_name,plugin_info in java_classes.items():
     with open(file_path.joinpath('cookiecutter.json'),'w') as fw:
         json.dump(plugin_dict,fw,indent=4)
 
-excluded_log.close()
+#excluded_log.close()
 
 
